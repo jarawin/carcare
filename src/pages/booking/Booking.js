@@ -1,23 +1,23 @@
-import React from 'react';
-import { BsFillPersonFill, BsFillTelephoneFill } from 'react-icons/bs';
-import { RiCarWashingFill } from 'react-icons/ri';
+import React from "react";
+import { BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs";
+import { RiCarWashingFill } from "react-icons/ri";
 
-import Calendar from './Calendar';
-import YingCenterBox from './yingBooking/YingCenter';
-import YingLeftBox from './yingBooking/YingLeftBox';
-import YingRightBox from './yingBooking/YingRightBox';
+import Calendar from "./Calendar";
+import YingCenterBox from "./yingBooking/YingCenter";
+import YingLeftBox from "./yingBooking/YingLeftBox";
+import YingRightBox from "./yingBooking/YingRightBox";
 
 function Booking() {
   const data = [
-    '9:00 AM',
-    '10:00 AM',
-    '11:00 AM',
-    '12:00 PM',
-    '13:00 PM',
-    '14:00 PM',
-    '15:00 PM',
-    '16:00 PM',
-    '17:00 PM',
+    "9:00 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "13:00 PM",
+    "14:00 PM",
+    "15:00 PM",
+    "16:00 PM",
+    "17:00 PM",
   ];
 
   return (
@@ -27,7 +27,9 @@ function Booking() {
       {/* NOTE จุดสิ้นสุดในส่วนของ LeftBox */}
       <YingLeftBox />
       {/* NOTE จุดเริ่มต้นในส่วนของ rightBox */}
-      <YingRightBox />
+      <div name="rightBox" className="flex">
+        <YingRightBox />
+      </div>
 
       {/* TODO ไอค่อนมันไม่ยอมอยู่ที่เดิมครับเวลาเปลี่ยนหน้าจอจากโน้ตบุ๊คไปไอแพด help me please */}
       <form action="" class="">
