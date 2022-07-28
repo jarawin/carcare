@@ -2,7 +2,7 @@ import React from 'react';
 import { BsFillPersonFill, BsFillTelephoneFill } from 'react-icons/bs';
 import { RiCarWashingFill } from 'react-icons/ri';
 
-import Calendar from '../../components/Calendar';
+import Calendar from './Calendar';
 
 function Booking() {
   const data = [
@@ -175,6 +175,7 @@ function Booking() {
       </div>
       {/* NOTE ข้างบนเป็นส่วนของเจ๊หญิง */}
 
+      {/*NOTE CALENDAR */}
       <div id="datetime" className=" bg-gray-200 flex flex-row">
         <div id="leftBox" className=" basis-1/2">
           <h1 className="text-2xl ">Select date and time</h1>
