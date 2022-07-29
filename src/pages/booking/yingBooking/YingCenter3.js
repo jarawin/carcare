@@ -1,37 +1,42 @@
 import React from "react";
 
-function YingRightBox() {
+function YingCenter3() {
   const dataCard = [
     {
-      title: "t1",
-      subtitle: "st1",
-      detail: "d1",
+      title: "Dynamic Wash ",
+      subtitle: "Package",
+      detail:
+        "Wash, Grout, Remove stains on body surfaces and wheel arches, etc. Let us take care of your car efficiently.",
       image: "/carwash.jpg",
     },
     {
-      title: "t2",
-      subtitle: "st2",
-      detail: "d2",
-      image: "/carwash.jpg",
+      title: "Polishing ",
+      subtitle: "Package",
+      detail:
+        "Removing minor clear coat damage using a polishing liquid to flatten the clear coat which increases the gloss-level.",
+      image: "/carpolish.jpg",
     },
     {
-      title: "t2",
-      subtitle: "st2",
-      detail: "d2",
-      image: "/carwash.jpg",
+      title: "Coating ",
+      subtitle: "Package",
+      detail:
+        "Silica coating for protecting surface to always look shiny. Ceramic coating for durability body and reduce wrinkles.",
+      image: "/carcoating.jpg",
     },
     {
-      title: "t2",
-      subtitle: "st2",
-      detail: "d2",
-      image: "/carwash.jpg",
+      title: "Clean Interior ",
+      subtitle: "Package",
+      detail:
+        "Cleaning inner parts of a vehicle with different methods such as vacuuming and steam-cleaning are used.",
+      image: "/carinterior.jpg",
     },
   ];
+
   return dataCard.map((item, idx) => {
     return (
       <div
         key={idx}
-        className="mx-auto bg-red-200 my-14 w-56 h-96 rounded-3xl overflow-hidden mb-10 shadow-black shadow-2xl"
+        className=" mx-auto bg-red-200 my-14 w-56 h-96 rounded-3xl overflow-hidden mb-10 shadow-black shadow-2xl"
       >
         <img
           className="rounded-lg shadow-2xl h-40 w-full object-cover object-center"
@@ -59,4 +64,4 @@ function YingRightBox() {
   });
 }
 
-export default YingRightBox;
+export default YingCenter3;
