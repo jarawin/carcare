@@ -1,6 +1,6 @@
 import React from "react";
 
-function YingCenter() {
+function YingCenter1() {
   return (
     <div id="service" className=" bg-gray-200">
       <div className=" center ">
@@ -26,4 +26,4 @@ function YingCenter() {
   );
 }
 
-export default YingCenter;
+export default YingCenter1;
