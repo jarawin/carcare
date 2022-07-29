@@ -8,7 +8,7 @@ import reportWebVitals from './utils/reportWebVitals';
 
 import App from './app/App';
 import './index.css';
-import "./services/i18n"
+import './services/i18n';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -22,6 +22,3 @@ root.render(
 );
 
 reportWebVitals();
-
-// require('@tailwindcss/aspect-ratio'),
-// require('@tailwindcss/forms'),
