@@ -8,10 +8,6 @@ import YingCenter1 from "./yingBooking/YingCenter1";
 import YingCenter2 from "./yingBooking/YingCenter2";
 import YingCenter3 from "./yingBooking/YingCenter3";
 
-import NatRightBox from "./NatRightBox";
-
-
-
 function Booking() {
 
   return (
