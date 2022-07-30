@@ -1,6 +1,6 @@
-import React from 'react';
-import { BsFillPersonFill, BsFillTelephoneFill } from 'react-icons/bs';
-import { RiCarWashingFill } from 'react-icons/ri';
+import React from "react";
+import { BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs";
+import { RiCarWashingFill } from "react-icons/ri";
 
 
 import Calendar from './Calendar';
@@ -14,6 +14,7 @@ function Booking() {
     <div className="bg-gray-200">
       <div className="max-w-7xl mx-auto">
         <YingCenter1 />
+        <YingStepper />
         <YingCenter2 />
         <YingCenter3 />
 
