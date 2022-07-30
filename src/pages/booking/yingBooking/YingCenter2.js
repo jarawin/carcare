@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import classNames from '../../../utils/classNames';
-import { GrNext, GrPrevious } from 'react-icons/gr';
+import React, { useState, useEffect } from "react";
+import classNames from "../../../utils/classNames";
+import { GrNext, GrPrevious } from "react-icons/gr";
 
 function YingCenter2() {
   const [imgDisplay, setImgDisplay] = useState(0);
   const images = [
     {
-      name: 'IMG 1',
-      src: '/suv.png',
+      name: "IMG 1",
+      src: "/suv.png",
     },
     {
-      name: 'IMG 2',
-      src: '/truck.png',
+      name: "IMG 2",
+      src: "/truck.png",
     },
   ];
 
   const handleClick = (e) => {
     const { name } = e.target;
-    if (name === 'next') {
+    if (name === "next") {
       setImgDisplay((imgDisplay + 1) % images.length);
     } else {
       setImgDisplay((imgDisplay - 1 + images.length) % images.length);
@@ -33,14 +33,17 @@ function YingCenter2() {
 
   return (
     <>
-      <div id="animation-carousel" className="relative">
+      <div id="animation-carousel" className="relative mt-16">
+        <button type="button" className=" absolute left-1/2 z-50 bg-green-500">
+          1234555555555555555555
+        </button>
         <div className="overflow-hidden relative h-56 rounded-lg md:h-96">
           {images.map((image, index) => (
             <div
               key={index}
               className={classNames(
-                imgDisplay === index ? '' : 'hidden',
-                ' duration-1000 ease-linear absolute inset-0 transition-all transform'
+                imgDisplay === index ? "" : "hidden",
+                " duration-1000 ease-linear absolute inset-0 transition-all transform"
               )}
             >
               <img
