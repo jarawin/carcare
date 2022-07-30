@@ -8,11 +8,11 @@ function YingCenter2() {
   const images = [
     {
       name: "IMG 1",
-      src: "/1.jpg",
+      src: "/suv.png",
     },
     {
       name: "IMG 2",
-      src: "/2.jpg",
+      src: "/truck.png",
     },
   ];
 
