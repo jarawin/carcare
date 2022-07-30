@@ -4,47 +4,37 @@ import { UserIcon, PhoneIcon } from '@heroicons/react/solid'
 
 function NatInput() {
     return (
-        <div className="flex items-center gap-32">
-
-            <div id="LeftBox" className="flex items-center basis-2/3 ml-32 bg-red-300">
-                Photo
+        <div className="">
+            {/*NOTE Enter name */}
+            <label for="input-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
+            <div class="relative mb-6">
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                    <UserIcon className="h-5 w-5 absolute" />
+                </div>
+                <input type="text" id="input-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-72 pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 required"
+                    placeholder="Name" />
             </div>
-            <div id="RightBox" class="flex flex-col items-center basis-1/3 gap-7 mr-20">
-                {/*NOTE Enter name */}
-                <div className=" relative flex items-center bg-our-bg2 text-black focus-within:text-pink-800">
-                    <UserIcon className="h-5 w-5 absolute ml-3" />
-                    <input
-                        type="text"
-                        placeholder="Name"
-                        className=" pr-3 pl-10 py-2 font-semibold placeholderbg-gray-500 text-black rounded-2xl border-none ring-2 ring-black focus:ring-red-500 focus:ring-2 required"
-                    />
+            {/*NOTE Enter phone number */}
+            <label for="input-phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Phone Number</label>
+            <div class="relative mb-6">
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                    <PhoneIcon className="h-5 w-5 absolute" />
                 </div>
-                {/*NOTE Enter phone number */}
-                <div className="relative flex items-center bg-our-bg text-black focus-within:text-pink-800">
-                    <PhoneIcon className="h-5 w-5 absolute ml-3" />
-                    <input
-                        type="tel"
-                        placeholder="012-345-6789"
-                        className="pr-3 pl-10 py-2 font-semibold placeholderbg-gray-500 text-black rounded-2xl border-none ring-2 ring-black focus:ring-red-500 focus:ring-2 required"
-                    />
-                </div>
-                {/*NOTE Enter Comment */}
-                <div className="relative flex items-center bg-our-bg text-black focus-within:text-pink-800">
-
-                    <textarea rows="5"
-                        className="pr-10 pl-3 py-2 font-semibold placeholderbg-gray-500 text-black rounded-2xl border-none ring-2 ring-black focus:ring-red-500 focus:ring-2 required"
-                        placeholder="Comment">
-                    </textarea>
-                </div>
-                {/*NOTE Button */}
-                <div id="button" className="flex justify-center py-3 gap-10 text-white">
-                    <button className="bg-red-500 rounded-lg px-6 py-2 hover:bg-gray-400">
-                        Cancel</button>
-                    <button className="bg-green-500 rounded-lg px-6 py-2 hover:bg-gray-400">
-                        Confirm</button>
-                </div>
-
+                <input type="tel" id="input-phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-72 pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pattern=[0-9]{3}-[0-9]{7} required"
+                    placeholder="012-3456789" />
             </div>
+            {/*NOTE Enter Comment */}
+            <label for="comment" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your Comment</label>
+            <textarea id="comment" rows="5" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 required"
+                placeholder="Comment"></textarea>
+
+            {/*NOTE Button Booking*/}
+            <div id="button" className="flex justify-center py-3 gap-10 text-white">
+                <button className="bg-green-500 rounded-lg px-6 py-2 hover:bg-gray-400">
+                    Booking</button>
+            </div>
+
+
         </div>
     )
 }

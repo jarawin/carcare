@@ -2,13 +2,12 @@ import React from "react";
 import { BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs";
 import { RiCarWashingFill } from "react-icons/ri";
 
-import NatInput from "./NatInput";
-import Calendar from "./Calendar";
-import YingCenter1 from "./yingBooking/YingCenter1";
-import YingCenter2 from "./yingBooking/YingCenter2";
-import YingCenter3 from "./yingBooking/YingCenter3";
-import YingStepper from "./yingBooking/YingStepper";
-import TimeSelect from "./TimeSelect";
+
+import Calendar from './Calendar';
+import YingCenter1 from './yingBooking/YingCenter1';
+import YingCenter2 from './yingBooking/YingCenter2';
+import YingCenter3 from './yingBooking/YingCenter3';
+import TimeSelect from './TimeSelect';
 
 function Booking() {
   return (
@@ -21,7 +20,6 @@ function Booking() {
 
         <Calendar />
         <TimeSelect />
-        <NatInput />
       </div>
     </div>
   );
