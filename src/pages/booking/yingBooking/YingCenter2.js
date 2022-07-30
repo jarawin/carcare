@@ -1,43 +1,74 @@
 import React, { useState } from "react";
+import classNames from "../../../utils/classNames";
+import { GrNext, GrPrevious } from "react-icons/gr";
 
 function YingCenter2() {
+  const [imgDisplay, setImgDisplay] = useState(0);
+
   const images = [
     {
-      title: "IMG 1",
-      idx: 0,
+      name: "IMG 1",
+      src: "/1.jpg",
     },
     {
-      title: "IMG 2",
-      idx: 1,
+      name: "IMG 2",
+      src: "/2.jpg",
     },
   ];
-  const [imgDisplay, setImgDisplay] = useState(images[0]);
 
-  const handleImage = (e) => {
-    const name = e.target.name;
-    console.log(name);
-    if (name == "next") {
-      if (imgDisplay.idx < images.length - 1) {
-        setImgDisplay(images[imgDisplay.idx + 1]);
-      }
+  const handleClick = (e) => {
+    const { name } = e.target;
+    if (name === "next") {
+      setImgDisplay((imgDisplay + 1) % images.length);
     } else {
-      if (imgDisplay.idx > 0) {
-        setImgDisplay(images[imgDisplay.idx - 1]);
-      }
+      setImgDisplay((imgDisplay - 1 + images.length) % images.length);
     }
   };
 
   return (
     <>
-      <div className="flex justify-center">
-        <button name="prev" className=" bg-lime-400" onClick={handleImage}>
-          {"<<<"}
-        </button>
-        <div className="mx-2 w-60 h-60 bg-sky-400 transition-transform	duration-500">
-          {imgDisplay.title}
+      <div id="animation-carousel" className="relative">
+        <div className="overflow-hidden relative h-56 rounded-lg md:h-96">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={classNames(
+                imgDisplay === index ? "" : "hidden",
+                " duration-500 ease-linear absolute inset-0 transition-all transform"
+              )}
+            >
+              <img
+                src={image.src}
+                className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt={image.name}
+              />
+            </div>
+          ))}
         </div>
-        <button name="next" className="bg-lime-400 " onClick={handleImage}>
-          {">>>"}
+
+        {/* <!-- Slider controls --> */}
+        <button
+          type="button"
+          className="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          name="prev"
+          onClick={handleClick}
+        >
+          <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <GrPrevious className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" />
+            <span className="sr-only">Previous</span>
+          </span>
+        </button>
+
+        <button
+          type="button"
+          className="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          name="next"
+          onClick={handleClick}
+        >
+          <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <GrNext className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" />
+            <span className="sr-only">Next</span>
+          </span>
         </button>
       </div>
     </>
