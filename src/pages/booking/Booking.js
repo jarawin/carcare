@@ -1,30 +1,27 @@
-import React from "react";
-import { BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs";
-import { RiCarWashingFill } from "react-icons/ri";
+import React from 'react';
+import { BsFillPersonFill, BsFillTelephoneFill } from 'react-icons/bs';
+import { RiCarWashingFill } from 'react-icons/ri';
 
-import NatInput from "./NatInput";
-import Calendar from "./Calendar";
-import YingCenter1 from "./yingBooking/YingCenter1";
-import YingCenter2 from "./yingBooking/YingCenter2";
-import YingCenter3 from "./yingBooking/YingCenter3";
+import NatInput from './NatInput';
+import Calendar from './Calendar';
+import YingCenter1 from './yingBooking/YingCenter1';
+import YingCenter2 from './yingBooking/YingCenter2';
+import YingCenter3 from './yingBooking/YingCenter3';
+import TimeSelect from './TimeSelect';
 
 function Booking() {
-
   return (
-    <>
-      {/* NOTE จุดสิ้นสุดในส่วนของ CenterBox */}
-      <YingCenter1 />
-      {/* NOTE จุดสิ้นสุดในส่วนของ LeftBox */}
-      <YingCenter2 />
-      {/* NOTE จุดเริ่มต้นในส่วนของ rightBox */}
-      <div name="rightBox" className="flex  bg-gray-200">
+    <div className="bg-gray-200">
+      <div className="max-w-7xl mx-auto">
+        <YingCenter1 />
+        <YingCenter2 />
         <YingCenter3 />
-      </div>
 
-      <Calendar />
-      <TimeSelect />
-      <NatInput />
-    </>
+        <Calendar />
+        <TimeSelect />
+        <NatInput />
+      </div>
+    </div>
   );
 }
 

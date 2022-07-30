@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.35",
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
     "@reduxjs/toolkit": "^1.8.3",
@@ -12,6 +13,7 @@
     "gapi-script": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-flagkit": "^2.0.4",
     "react-google-login": "^5.2.2",
     "react-i18next": "^11.18.3",
     "react-icons": "^4.4.0",
