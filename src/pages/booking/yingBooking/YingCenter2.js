@@ -34,7 +34,10 @@ function YingCenter2() {
   return (
     <>
       <div id="animation-carousel" className="relative mt-16">
-        <button type="button" className=" absolute left-1/2 z-50 bg-green-500">
+        <button
+          type="button"
+          className=" absolute left-1/2 z-50 bg-green-500 rounded-lg"
+        >
           1234555555555555555555
         </button>
         <div className="overflow-hidden relative h-56 rounded-lg md:h-96">
