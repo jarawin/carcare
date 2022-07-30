@@ -1,29 +1,35 @@
-import React, { useState } from 'react';
-import classNames from '../../../utils/classNames';
-import { GrNext, GrPrevious } from 'react-icons/gr';
+import React, { useState, useEffect } from "react";
+import classNames from "../../../utils/classNames";
+import { GrNext, GrPrevious } from "react-icons/gr";
 
 function YingCenter2() {
   const [imgDisplay, setImgDisplay] = useState(0);
-
   const images = [
     {
-      name: 'IMG 1',
-      src: '/1.jpg',
+      name: "IMG 1",
+      src: "/suv.png",
     },
     {
-      name: 'IMG 2',
-      src: '/2.jpg',
+      name: "IMG 2",
+      src: "/truck.png",
     },
   ];
 
   const handleClick = (e) => {
     const { name } = e.target;
-    if (name === 'next') {
+    if (name === "next") {
       setImgDisplay((imgDisplay + 1) % images.length);
     } else {
       setImgDisplay((imgDisplay - 1 + images.length) % images.length);
     }
   };
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setImgDisplay((imgDisplay + 1) % images.length);
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, [imgDisplay]);
 
   return (
     <>
@@ -33,8 +39,8 @@ function YingCenter2() {
             <div
               key={index}
               className={classNames(
-                imgDisplay === index ? '' : 'hidden',
-                ' duration-500 ease-linear absolute inset-0 transition-all transform'
+                imgDisplay === index ? "" : "hidden",
+                " duration-1000 ease-linear absolute inset-0 transition-all transform"
               )}
             >
               <img
