@@ -1,10 +1,10 @@
 import React from 'react'
-import {Wrapper,status} from "@googlemaps/react-wrapper"
+
+import Carousel from './Carousel'
 function Home() {
      return (
           <div>
-               <img src='test_pic.jpg' className=' h-full w-full rounded-xl '></img>
-               <div className=' w-0 h-0 border-b-grey-600 border-b-[100px] border-r-transparent border-r-[500px] border-l-transparent border-l-[0px]'></div>
+               <Carousel/>
                <div>
                     <p className=' text-center m-5'>CAR CARE MANAGER</p>
                     <p className=' text-center'>Car care manager has brought a new management system to build on the car care
@@ -13,24 +13,24 @@ function Home() {
                </div>
 
                <div>
-                    <p className=' bg-red-600 rounded-xl text-center m-5'>Tel. 012-345-6789</p>
+                    <p className=' bg-red-600 rounded-xl text-center w-48 mx-auto'>Tel. 012-345-6789</p>
                </div>
 
                <div className=' w-auto flex flex-wrap'>
                     <div>
-                         <img src='Rectangle_34.png' className=' p-2 rounded-xl'></img>
+                         <img src='Rectangle_34.png' className=' p-2 rounded-xl mx-auto items-center'></img>
                          <p className=' p-2 text-center'>Washing</p>
                     </div>
                     <div>
-                         <img src='Rectangle_35.png' className=' p-2 rounded-xl'></img>
+                         <img src='Rectangle_35.png' className=' p-2 rounded-xl mx-auto object-center'></img>
                          <p className=' p-2 text-center'>Polishing</p>
                     </div>
                     <div>
-                         <img src='Rectangle_36.png' className=' p-2 rounded-xl'></img>
+                         <img src='Rectangle_36.png' className=' p-2 rounded-xl mx-auto'></img>
                          <p className=' p-2 text-center'>Glass Coating</p>                    
                     </div>
                     <div>
-                         <img src='Rectangle_37.png' className=' p-2 rounded-xl'></img>
+                         <img src='Rectangle_37.png' className=' p-2 rounded-xl mx-auto'></img>
                          <p className=' p-2 text-center'>Cleaning Seat</p>
                     </div>
                </div>
