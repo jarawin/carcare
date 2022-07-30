@@ -6,6 +6,7 @@ import AdminLayout from './layout/AdminLayout';
 import Home from '../pages/home/Home';
 import NoPage from '../pages/nopage/NoPage';
 import Booking from '../pages/booking/Booking';
+import Test from '../pages/test/Test';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<UserLayout />}>
           <Route index element={<Home />} />
           <Route path="booking" element={<Booking />} />
+          <Route path="test" element={<Test />} />
           <Route path="*" element={<NoPage />} />
         </Route>
 

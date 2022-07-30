@@ -11,20 +11,17 @@ import TimeSelect from './TimeSelect';
 
 function Booking() {
   return (
-    <>
-      {/* NOTE จุดสิ้นสุดในส่วนของ CenterBox */}
-      <YingCenter1 />
-      {/* NOTE จุดสิ้นสุดในส่วนของ LeftBox */}
-      <YingCenter2 />
-      {/* NOTE จุดเริ่มต้นในส่วนของ rightBox */}
-      <div name="rightBox" className="flex  bg-gray-200">
+    <div className="bg-gray-200">
+      <div className="max-w-7xl mx-auto">
+        <YingCenter1 />
+        <YingCenter2 />
         <YingCenter3 />
-      </div>
 
-      <Calendar />
-      <TimeSelect />
-      <NatInput />
-    </>
+        <Calendar />
+        <TimeSelect />
+        <NatInput />
+      </div>
+    </div>
   );
 }
 
