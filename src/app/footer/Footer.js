@@ -1,6 +1,9 @@
 import React from 'react';
+import MultiLang from './MultiLang';
 
 function Footer() {
+  const [lang, setLang] = React.useState('en');
+  const [isOpenLang, setIsOpenLang] = React.useState(false);
   return (
     <footer class="bg-white dark:bg-gray-900">
       <div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
@@ -110,8 +113,7 @@ function Footer() {
       </div>
       <div class="py-6 px-4 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
         <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-          © 2022 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
-          Reserved.
+          © 2022 <a>KSR Carcare™</a>. All Rights Reserved.
         </span>
         <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
           <a
@@ -201,6 +203,10 @@ function Footer() {
             <span class="sr-only">Dribbble account</span>
           </a>
         </div>
+        <MultiLang
+          lang={[[lang, setLang]]}
+          isOpen={[isOpenLang, setIsOpenLang]}
+        />
       </div>
     </footer>
   );
