@@ -33,13 +33,7 @@ function YingCenter2() {
 
   return (
     <>
-      <div id="animation-carousel" className="relative mt-16">
-        <button
-          type="button"
-          className=" absolute left-1/2 z-50 bg-green-500 rounded-lg"
-        >
-          1234555555555555555555
-        </button>
+      <div id="animation-carousel" className="relative mt-16 items-center ">
         <div className="overflow-hidden relative h-56 rounded-lg md:h-96">
           {images.map((image, index) => (
             <div
@@ -82,6 +76,14 @@ function YingCenter2() {
             <span className="sr-only">Next</span>
           </span>
         </button>
+        <div className=" flex justify-center">
+          <button
+            type="button"
+            className=" absolute z-50 p-3 rounded-full ring-black ring-2 bg-white text-black font-bold hover:bg-green-500 hover:text-white"
+          >
+            Select my vehicle type
+          </button>
+        </div>
       </div>
     </>
   );

@@ -8,12 +8,12 @@ const steps = [
   "Select Vehicle Type",
   "Select Package",
   "Select Date and Time",
-  "Fill up",
+  "Fill in",
 ];
 
 export default function HorizontalLabelPositionBelowStepper() {
   return (
-    <div className=" bg-neutral-800 py-5">
+    <div className=" bg-neutral-800 py-4 w-full">
       <Box sx={{ width: "100%" }}>
         <Stepper activeStep={1} alternativeLabel>
           {steps.map((label) => (
