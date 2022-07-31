@@ -8,7 +8,7 @@ import Profile from './components/Profile';
 
 function Navbar2() {
   const [isOpenMobile, setIsOpenMobile] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
 
   return (
     <>
