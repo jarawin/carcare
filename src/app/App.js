@@ -32,7 +32,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="users" element={<Users />} />
           <Route path="queue" element={<Queue />} />
-          <Route path="services" element={<ServicesAdmin />} />
+          {/* <Route path="services" element={<ServicesAdmin />} /> */}
           <Route path="events" element={<Events />} />
           <Route path="sumarize" element={<Sumarize />} />
           <Route path="*" element={<NoPage />} />

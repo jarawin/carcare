@@ -27,10 +27,10 @@ function Menu(props) {
       name: 'Queue',
       url: '/admin/queue',
     },
-    {
-      name: 'Services',
-      url: '/admin/services',
-    },
+    // {
+    //   name: 'Services',
+    //   url: '/admin/services',
+    // },
     {
       name: 'Events',
       url: '/admin/events',
