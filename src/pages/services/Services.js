@@ -17,84 +17,45 @@
 const products = [
   {
     id: 1,
-    name: 'Basic Tee',
+    name: 'Dynamic Wash',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://img.freepik.com/premium-photo/hand-man-car-wash_268174-1201.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    price: '$499',
+
   },
   {
     id: 2,
-    name: 'Basic Tee',
+    name: 'Polishing',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://img.freepik.com/premium-photo/polishing-car-after-painting-detailing-car-from-outside-device-polishing-hands_188969-22.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    price: '$399',
+
   },
   {
     id: 3,
-    name: 'Basic Tee',
+    name: 'Coating',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://cdn-eeeci.nitrocdn.com/jtklKqmwunZWBGmOrckyXSwbSuvViEGf/assets/static/optimized/rev-1650843/wp-content/uploads/2021/12/Red-ceramic-coated-car.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    price: '$459',
+
   },
   {
     id: 4,
-    name: 'Basic Tee',
+    name: 'Clean Interior',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/man-hoovering-seat-of-car-during-car-cleaning-royalty-free-image-1585677173.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    price: '$199',
+
   },
-  {
-    id: 5,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
-  },
-  {
-    id: 6,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
-  },
-  {
-    id: 7,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
-  },
-  {
-    id: 8,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
-  },
+
 ];
 
 function Services() {
