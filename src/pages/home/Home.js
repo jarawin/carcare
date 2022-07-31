@@ -41,7 +41,7 @@ function Home() {
                <div className=" w-auto flex flex-wrap justify-center space-x-8 p-7">
                     <div>
                          <img src="Rectangle_34.png" className=" p-2 rounded-xl"></img>
-                         <p className=" p-2 text-center">Washing</p>
+                         <p className=" p-2 text-center">Dynamic Wash</p>
                     </div>
                     <div>
                          <img src="Rectangle_35.png" className=" p-2 rounded-xl"></img>
@@ -49,11 +49,11 @@ function Home() {
                     </div>
                     <div>
                          <img src="Rectangle_36.png" className=" p-2 rounded-xl"></img>
-                         <p className=" p-2 text-center">Glass Coating</p>
+                         <p className=" p-2 text-center">Coating</p>
                     </div>
                     <div>
                          <img src="Rectangle_37.png" className=" p-2 rounded-xl"></img>
-                         <p className=" p-2 text-center">Cleaning Seat</p>
+                         <p className=" p-2 text-center">Clean Interior</p>
                     </div>
                </div>
 
@@ -67,15 +67,6 @@ function Home() {
                          Google Map
                     </p>
                </div>
-
-               <div>
-                    <p className=" bg-red-600 text-center p-1 bg-full">
-                         Copyright © CarCareManager.com
-                    </p>
-               </div>
-
-
-
           </div >
      );
 }
