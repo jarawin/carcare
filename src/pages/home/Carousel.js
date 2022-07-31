@@ -7,11 +7,11 @@ function Carousel() {
     const images = [
         {
             name: 'IMG 1',
-            src: 'carcoating.jpg',
+            src: 'cartest.jpg',
         },
         {
             name: 'IMG 2',
-            src: 'carpolish.jpg',
+            src: 'clean testing.jpg',
         },
         {
             name: 'IMG 3',
@@ -35,7 +35,7 @@ function Carousel() {
     return (
         <>
             <div id="animation-carousel" className="relative">
-                <div className="overflow-hidden relative h-56 md:h-96">
+                <div className="overflow-hidden relative h-56 md:h-screen">
                     {images.map((image, index) => (
                         <div
                             key={index}
