@@ -1,10 +1,11 @@
 import React from 'react'
 import Carousel from './Carousel'
+import ' ./ping.module.css'
 function Home() {
      return (
           <div className='bg-gray-200'>
                <div className=' relative'>
-                    <Carousel />
+                    <div className=' '><Carousel /></div>
                     <div className=' absolute bottom-10 left-12 md:bottom-20 md:left-20'>
                          <button className="bg-black rounded-xl h-20 w-40 md:h-40 bg-opacity-30
                     border-l-[2px] border-l-white
@@ -28,13 +29,13 @@ function Home() {
 
 
                <div className=' mx-auto text-center'>
-                    <p className='m-5'>CAR CARE MANAGER</p>
+                    <p className='m-5 pt-6'>CAR CARE MANAGER</p>
                     <p className='mx-auto max-w-lg whitespace-normal'>Car care manager has brought a new management system to build on the car care
                          business. We have a comprehensive service for you. We will stand up to premium
                          quality to make your wishes shine true.</p>
                </div>
 
-               <div>
+               <div className=' pt-4'>
                     <p className=' bg-red-600 rounded-xl text-center w-48 mx-auto m-4 text-white'>Tel. 012-345-6789</p>
                </div>
 
