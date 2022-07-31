@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from './components/Logo';
 import Menu from './components/Menu';
-// import './navbar.css';
+import './navbar.css';
 import { FiMenu } from 'react-icons/fi';
 import Login from './components/Login';
 import Profile from './components/Profile';
