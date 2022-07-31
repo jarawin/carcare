@@ -8,6 +8,7 @@ import YingCenter2 from './yingBooking/YingCenter2';
 import YingCenter3 from './yingBooking/YingCenter3';
 import YingStepper from './yingBooking/YingStepper';
 import TimeSelect from './TimeSelect';
+import DatePicker from './DatePicker';
 
 function Booking() {
   return (
@@ -18,6 +19,7 @@ function Booking() {
         <YingCenter2 />
         <YingCenter3 />
 
+        <DatePicker />
         <Calendar />
         <TimeSelect />
       </div>
