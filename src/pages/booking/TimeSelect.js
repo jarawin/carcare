@@ -17,20 +17,21 @@ function TimeSelect() {
 
   return (
     <div className="">
-      <h1 class="text-left text-3xl font-mono font-bold text-red-600">Select Date and Time</h1>
-      <div className="flex items-center" >
+      <h1 class="text-left text-3xl font-mono font-bold text-red-600">
+        Select Date and Time
+      </h1>
+      <div className="flex items-center">
         {/*NOTE LeftBox Select Date and Time*/}
         <div id="LeftBox" className="flex items-center basis-2/3 ml-20">
           {/*NOTE Select Day*/}
           {/*TODO Calendar*/}
-          <div
-            id="dayweek"
-            className="flex flex-row justify-start rounded-md ">
+          <div id="dayweek" className="flex flex-row justify-start rounded-md ">
             {dayweek.map((item, idx) => {
               return (
                 <div
                   key={idx}
-                  className="text-gray-700 rounded-lg text-center bg-gray-300 px-6 py-4 m-6">
+                  className="text-gray-700 rounded-lg text-center bg-gray-300 px-6 py-4 m-6"
+                >
                   <p className="text-gray-900 group-hover:text-p urple-900 text-sm transition-all	duration-300 bg-white p-5 mb-3 rounded-md">
                     {item}
                   </p>

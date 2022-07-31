@@ -30,7 +30,7 @@ function MultiLang() {
       <button
         type="button"
         data-dropdown-toggle="language-dropdown-menu"
-        className="mr-2 inline-flex justify-center items-center p-2 text-sm dark:text-neutral-300 text-neutral-500 rounded cursor-pointer hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-700 dark:hover:text-white"
+        className="mr-2 inline-flex justify-center items-center p-2 text-sm dark:text-gray-300 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
         onClick={() => setIsOpen(!isOpen)}
       >
         <Flag country={languages[idxLang].flag} className="mr-2" />
@@ -40,14 +40,14 @@ function MultiLang() {
       <div
         className={classNames(
           isOpen ? '' : 'hidden',
-          ' relative z-40 my-4 text-base list-none bg-white rounded divide-y divide-neutral-100 shadow dark:bg-neutral-700'
+          ' relative z-40 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700'
         )}
       >
-        <ul className="absolute bg-neutral-200 right-0 bottom-5 rounded-lg">
+        <ul className="absolute bg-gray-200 right-0 bottom-5 rounded-lg">
           {languages.map((language, index) => (
             <li key={index}>
               <a
-                className="block py-2 pr-10 pl-4 text-sm text-neutral-700 hover:rounded-lg hover:bg-neutral-100 dark:text-neutral-800 dark:hover:bg-neutral-600 dark:hover:text-white"
+                className="block py-2 pr-10 pl-4 text-sm text-gray-700 hover:rounded-lg hover:bg-gray-100 dark:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"
                 onClick={() => handleChangeLang(language.name)}
               >
                 <div className="inline-flex items-center">

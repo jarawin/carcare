@@ -49,25 +49,25 @@ function Menu(props) {
       )}
       id="navbar-sticky"
     >
-      <ul className="flex flex-col p-4 mt-4 bg-neutral-50 rounded-lg border border-neutral-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-neutral-800 md:dark:bg-neutral-900 dark:border-neutral-700">
+      <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         {pagesUser.map((page, index) => (
           <li key={index}>
             <a
               href={page.url}
-              className="block py-2 pr-4 pl-3 text-md text-neutral-700 rounded hover:bg-neutral-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-white dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-neutral-700"
+              className="block py-2 pr-4 pl-3 text-md text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
             >
               {page.name}
             </a>
           </li>
         ))}
       </ul>
-      <p className="dark:text-neutral-400 mx-4">{' | '}</p>
-      <ul className="flex flex-col p-4 mt-4 bg-neutral-50 rounded-lg border border-neutral-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-neutral-800 md:dark:bg-neutral-900 dark:border-neutral-700">
+      <p className="dark:text-gray-400 mx-4">{' | '}</p>
+      <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         {pagesAdmin.map((page, index) => (
           <li key={index}>
             <a
               href={page.url}
-              className="block py-2 pr-4 pl-3 text-md text-neutral-700 rounded hover:bg-neutral-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-white dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-neutral-700"
+              className="block py-2 pr-4 pl-3 text-md text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
             >
               {page.name}
             </a>
