@@ -5,18 +5,20 @@ function LoadingPage() {
     <div class="mx-auto max-w-7xl">
       {' '}
       <div role="status" class="my-7 animate-pulse">
-        {' '}
-        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[380px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px]"></div>
+        <a href="#content" class=" focus:not-sr-only">
+          Skip to content
+        </a>{' '}
+        <div class="h-2.5 bg-gray-500 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[380px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px]"></div>
         <span class="sr-only">Loading...</span>{' '}
       </div>
       <div role="status" class="mb-7 max-w-7xl animate-pulse">
         {' '}
-        <div class="flex justify-center items-center w-full h-48 bg-gray-300 rounded dark:bg-gray-700">
+        <div class="flex justify-center items-center w-full h-48 bg-gray-500 rounded dark:bg-gray-700">
           {' '}
           <svg
             class="w-12 h-60 text-gray-200"
@@ -32,41 +34,41 @@ function LoadingPage() {
       </div>
       <div role="status" class="my-6 animate-pulse">
         {' '}
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[380px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px]"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[380px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px]"></div>
         <span class="sr-only">Loading...</span>{' '}
       </div>
       <div role="status" class="my-6 animate-pulse">
         {' '}
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
         <span class="sr-only">Loading...</span>{' '}
       </div>
-      <div role="status" class="mt-7 mb-6 animate-pulse">
+      <div id="content" role="status" class="mt-7 mb-6 animate-pulse">
         {' '}
-        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[380px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px]"></div>
+        <div class="h-2.5 bg-gray-500 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[380px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[500px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px]"></div>
         <span class="sr-only">Loading...</span>{' '}
       </div>
       <div role="status" class="my-6 animate-pulse">
         {' '}
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+        <div class="h-2 bg-gray-400 rounded-full dark:bg-gray-700 max-w-[450px] mb-2.5"></div>
         <span class="sr-only">Loading...</span>{' '}
       </div>
     </div>

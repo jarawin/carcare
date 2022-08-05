@@ -23,7 +23,6 @@ const products = [
       'https://img.freepik.com/premium-photo/hand-man-car-wash_268174-1201.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$499',
-
   },
   {
     id: 2,
@@ -33,7 +32,6 @@ const products = [
       'https://img.freepik.com/premium-photo/polishing-car-after-painting-detailing-car-from-outside-device-polishing-hands_188969-22.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$399',
-
   },
   {
     id: 3,
@@ -43,7 +41,6 @@ const products = [
       'https://cdn-eeeci.nitrocdn.com/jtklKqmwunZWBGmOrckyXSwbSuvViEGf/assets/static/optimized/rev-1650843/wp-content/uploads/2021/12/Red-ceramic-coated-car.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$459',
-
   },
   {
     id: 4,
@@ -53,14 +50,12 @@ const products = [
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/man-hoovering-seat-of-car-during-car-cleaning-royalty-free-image-1585677173.jpg',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$199',
-
   },
-
 ];
 
 function Services() {
   return (
-    <div className="bg-white">
+    <div className="">
       <div className="max-w-2xl mx-auto py-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="mt-2 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (

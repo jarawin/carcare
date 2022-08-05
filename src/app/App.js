@@ -28,7 +28,7 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
 
-        <Route path="/admin/" element={<AdminLayout />}>
+        <Route path="/admin/" element={<UserLayout />}>
           <Route index element={<Home />} />
           <Route path="users" element={<Users />} />
           <Route path="queue" element={<Queue />} />

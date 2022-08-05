@@ -4,7 +4,7 @@ import './ping.css';
 
 function Home() {
   return (
-    <div className="bg-gray-200">
+    <div className="">
       <div className=" relative">
         <div className=" ">
           <Carousel />
@@ -64,15 +64,6 @@ function Home() {
           <img src="Rectangle_37.png" className=" p-2 rounded-xl"></img>
           <p className=" p-2 text-center">Clean Interior</p>
         </div>
-      </div>
-
-      <div>
-        <p className=" text-center p-7">CONTRACT</p>
-        <p className=" text-center m-5">
-          Ground floor parking lot, Lotus Department Store, Khao Rup Chang
-          Subdistrict, Mueang Songkhla District, Songkhla 90000
-        </p>
-        <p className=" bg-orange-300 text-center m-5">Google Map</p>
       </div>
     </div>
   );

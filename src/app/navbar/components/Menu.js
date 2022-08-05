@@ -1,8 +1,11 @@
 import React from 'react';
 import ClassNames from '../../../utils/classNames';
+import { useTranslation } from 'react-i18next';
 
 function Menu(props) {
   const [isOpen, setIsOpen] = props.isOpen;
+  const { t } = useTranslation();
+
   const pagesUser = [
     {
       name: 'Home',
@@ -56,7 +59,7 @@ function Menu(props) {
               href={page.url}
               className="block py-2 pr-4 pl-3 text-md text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
             >
-              {page.name}
+              {t('menu.' + page.name.toLocaleLowerCase())}
             </a>
           </li>
         ))}
