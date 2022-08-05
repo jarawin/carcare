@@ -8,11 +8,7 @@ import { ArrowDownIcon } from '@heroicons/react/solid';
 import Stepper from './Stepper';
 
 function NoPage() {
-  return (
-    <>
-      <Stepper />
-    </>
-  );
+  return <>404 Not Found</>;
 }
 
 export default NoPage;

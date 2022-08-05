@@ -13,7 +13,7 @@ const steps = [
 
 export default function HorizontalLabelPositionBelowStepper() {
   return (
-    <div className=" bg-gray-800 py-4 w-full">
+    <div className=" bg-gray-800 py-4 w-full fixed">
       <Box sx={{ width: '100%' }}>
         <Stepper activeStep={1} alternativeLabel>
           {steps.map((label) => (
