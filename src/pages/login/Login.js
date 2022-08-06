@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-import { auth } from '../../services/firebase';
+// import { auth } from '../../services/firebase';
 
 import { LockClosedIcon } from '@heroicons/react/solid';
 import { IoLogoAngular } from 'react-icons/io';
@@ -11,17 +11,17 @@ function Login() {
 
   const signIn = (e) => {
     e.preventDefault();
-    auth
-      .createUserWithEmailAndPassword(
-        emailRef.current.value,
-        passwordRef.current.value
-      )
-      .then((user) => {
-        console.log(user);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // auth
+    //   .createUserWithEmailAndPassword(
+    //     emailRef.current.value,
+    //     passwordRef.current.value
+    //   )
+    //   .then((user) => {
+    //     console.log(user);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   };
 
   return (

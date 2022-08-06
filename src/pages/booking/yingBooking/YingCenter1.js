@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function YingCenter1() {
   return (
@@ -8,7 +8,7 @@ function YingCenter1() {
         <div name="CenterBox" className="">
           <div className="container px-4 mx-auto max-w-5xl">
             <div className="text-center py-14">
-              <h1 className=" font-itim mt-40 text-7xl font-bold font-title text-sec text-red-600 dark:text-red-500">
+              <h1 className=" font-itim mt-10 text-7xl font-bold font-title text-sec text-red-600 dark:text-red-500">
                 Car Washing
                 <br />
                 <span className=" text-black dark:text-white text-6xl font-itim ">
