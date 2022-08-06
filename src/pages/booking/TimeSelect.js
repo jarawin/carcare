@@ -17,9 +17,6 @@ function TimeSelect() {
 
   return (
     <div className="">
-      <h1 class="text-left text-3xl font-mono font-bold text-red-600">
-        Select Date and Time
-      </h1>
       <div className="flex items-center">
         {/*NOTE LeftBox Select Date and Time*/}
         <div id="LeftBox" className="flex items-center basis-2/3 ml-20">
