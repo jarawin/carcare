@@ -1,13 +1,36 @@
+import { useRef } from 'react';
+
+import { auth } from '../../services/firebase';
+
 import { LockClosedIcon } from '@heroicons/react/solid';
 import { IoLogoAngular } from 'react-icons/io';
 
 function Login() {
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+
+  const signIn = (e) => {
+    e.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(
+        emailRef.current.value,
+        passwordRef.current.value
+      )
+      .then((user) => {
+        console.log(user);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <>
       <div className="min-h-full flex items-center justify-center h-screen px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
             <IoLogoAngular className="mx-auto h-12 w-auto" color="#FF4444" />
+
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
               Sign in to your account
             </h2>
@@ -29,6 +52,7 @@ function Login() {
                   Email address
                 </label>
                 <input
+                  ref={emailRef}
                   id="email-address"
                   name="email"
                   type="email"
@@ -43,6 +67,7 @@ function Login() {
                   Password
                 </label>
                 <input
+                  ref={passwordRef}
                   id="password"
                   name="password"
                   type="password"
@@ -84,6 +109,7 @@ function Login() {
               <button
                 type="submit"
                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                onClick={signIn}
               >
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                   <LockClosedIcon

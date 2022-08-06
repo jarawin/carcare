@@ -1,34 +1,34 @@
-import React from 'react';
+import React from "react";
 
 function YingCenter3() {
   const dataCard = [
     {
-      title: 'Dynamic Wash ',
-      subtitle: 'Package',
+      title: "Dynamic Wash ",
+      subtitle: "Package",
       detail:
-        'Wash, Grout, Remove stains on body surfaces and wheel arches, etc. Let us take care of your car efficiently.',
-      image: '/carwash.jpg',
+        "Wash, Grout, Remove stains on body surfaces and wheel arches, etc. Let us take care of your car efficiently.",
+      image: "/carwash.jpg",
     },
     {
-      title: 'Polishing ',
-      subtitle: 'Package',
+      title: "Polishing ",
+      subtitle: "Package",
       detail:
-        'Removing minor clear coat damage using a polishing liquid to flatten the clear coat which increases the gloss-level.',
-      image: '/carpolish.jpg',
+        "Removing minor clear coat damage using a polishing liquid to flatten the clear coat which increases the gloss-level.",
+      image: "/carpolish.jpg",
     },
     {
-      title: 'Coating ',
-      subtitle: 'Package',
+      title: "Coating ",
+      subtitle: "Package",
       detail:
-        'Silica coating for protecting surface to always look shiny. Ceramic coating for durability body and reduce wrinkles.',
-      image: '/carcoating.jpg',
+        "Silica coating for protecting surface to always look shiny. Ceramic coating for durability body and reduce wrinkles.",
+      image: "/carcoating.jpg",
     },
     {
-      title: 'Clean Interior ',
-      subtitle: 'Package',
+      title: "Clean Interior ",
+      subtitle: "Package",
       detail:
-        'Cleaning inner parts of a vehicle with different methods such as vacuuming and steam-cleaning are used.',
-      image: '/carinterior.jpg',
+        "Cleaning inner parts of a vehicle with different methods such as vacuuming and steam-cleaning are used.",
+      image: "/carinterior.jpg",
     },
   ];
 
@@ -45,7 +45,7 @@ function YingCenter3() {
               src={item.image}
             ></img>
 
-            <h1 class=" pl-5 pr-5 py-3 text-2xl text-center font-bold text-red-800 leading-tight ">
+            <h1 class=" pl-5 pr-5 py-3 text-2xl text-center font-bold text-red-600 leading-tight ">
               {item.title}
               <br />
               <span className=" text-gray-800">{item.subtitle}</span>
@@ -58,7 +58,7 @@ function YingCenter3() {
                 href="#"
                 className="inline-block my-3 px-5 py-3 rounded-full shadow-lg
                 bg-black text-sm text-white uppercase tracking-wider font-semibold 
-                hover:text-white hover:bg-red-800 "
+                hover:text-white hover:bg-red-600 "
               >
                 Click to Booking
               </button>

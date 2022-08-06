@@ -1,8 +1,10 @@
 import React from 'react';
 import Carousel from './Carousel';
 import './ping.css';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+  const { t } = useTranslation();
   return (
     <div className="">
       <div className=" relative">
@@ -16,7 +18,7 @@ function Home() {
                     border-r-[2px] border-r-white
                     border-t-[2px] border-t-white"
           >
-            <p className=" text-white">discount 20%</p>
+            <p className=" text-white">{t('home.discount')}</p>
             <div className=" absolute left-0">
               <button
                 className="bg-red-700 bottom rounded-lg h-10 -bottom-12 w-40 absolute  md:-bottom-20
@@ -33,8 +35,8 @@ function Home() {
       </div>
 
       <div className=" mx-auto text-center">
-        <p className="m-5 pt-6 ja">CAR CARE MANAGER</p>
-        <p className="mx-auto max-w-lg whitespace-normal">
+        <p className="m-5 pt-6 text-black dark:text-white">CAR CARE MANAGER</p>
+        <p className="mx-auto max-w-lg whitespace-normal dark:text-white">
           Car care manager has brought a new management system to build on the
           car care business. We have a comprehensive service for you. We will
           stand up to premium quality to make your wishes shine true.
@@ -42,7 +44,7 @@ function Home() {
       </div>
 
       <div className=" pt-4">
-        <p className=" bg-red-600 rounded-xl text-center w-48 mx-auto m-4 text-white">
+        <p className=" bg-red-600 rounded-xl text-center w-48 mx-auto m-4 text-white ">
           Tel. 012-345-6789
         </p>
       </div>
