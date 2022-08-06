@@ -1,9 +1,12 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import config from './config';
+import { initializeApp } from 'firebase/app';
+import firebaseConfig from '../assets/firebaseConfig';
 
-if (!firebase.apps.length) {
-  firebase.initializeApp(config);
-}
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// const analytics = firebase.getAnalytics(app);
 
-export default firebase.auth();
+const db = app.firestore();
+const auth = app.auth();
+
+export { auth };
+export default db;
