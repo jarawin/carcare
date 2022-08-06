@@ -1,6 +1,6 @@
 import React from 'react';
-import { HiPhone, HiUser } from 'react-icons/hi';
-import { AiFillCar } from 'react-icons/ai';
+import { HiPhone, HiUser, HiOutlineUser, HiOutlinePhone } from 'react-icons/hi';
+import { AiFillCar, AiOutlineCar } from 'react-icons/ai';
 import { GiPriceTag } from 'react-icons/gi';
 
 function NatInput() {
