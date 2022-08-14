@@ -1,6 +1,6 @@
 import React from 'react';
-import { HiPhone, HiUser, HiOutlineUser, HiOutlinePhone } from 'react-icons/hi';
-import { AiFillCar, AiOutlineCar } from 'react-icons/ai';
+import { HiPhone, HiUser } from 'react-icons/hi';
+import { AiFillCar } from 'react-icons/ai';
 import { GiPriceTag } from 'react-icons/gi';
 
 function NatInput() {
@@ -15,7 +15,7 @@ function NatInput() {
       </label>
       <div class="relative mb-6">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-          <HiUser className="h-5 w-5 absolute" />
+          <HiUser className="h-5 w-5 absolute dark:text-gray-300 " />
         </div>
         <input
           type="text"
@@ -33,7 +33,7 @@ function NatInput() {
       </label>
       <div class="relative mb-6">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-          <HiPhone className="h-5 w-5 absolute" />
+          <HiPhone className="h-5 w-5 absolute dark:text-gray-300" />
         </div>
         <input
           type="tel"
@@ -51,7 +51,7 @@ function NatInput() {
       </label>
       <div class="relative mb-6">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-          <AiFillCar className="h-5 w-5 absolute" />
+          <AiFillCar className="h-5 w-5 absolute dark:text-gray-300" />
         </div>
         <input
           type="text"
@@ -69,7 +69,7 @@ function NatInput() {
       </label>
       <div class="relative mb-6">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-          <GiPriceTag className="h-5 w-5 absolute" />
+          <GiPriceTag className="h-5 w-5 absolute dark:text-gray-300" />
         </div>
         <input
           type="text"
@@ -81,7 +81,7 @@ function NatInput() {
       {/*NOTE Enter Comment */}
       <label
         for="comment"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
       >
         Your Comment
       </label>
