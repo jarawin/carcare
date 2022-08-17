@@ -1,7 +1,6 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 function Services() {
-  const packages = ['description','timestamp','name','ms_id','p_id','image'];
+  const packages = ['description','timestamp','name','ms_id','p_id','image'] ;
   const data_package = [['10','20.00','who','m01','p01','img']]
 
   const micro_service = ['car_type','image','description','ms_id','name','timestamp','price'];
@@ -17,16 +16,13 @@ function Services() {
         <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
               <li>
-                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">packages</a>
               </li>
               <li>
-                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">micro_service</a>
               </li>
               <li>
-                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">mix_package</a>
               </li>
             </ul>
         </div>
