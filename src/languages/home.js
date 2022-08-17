@@ -6,6 +6,5 @@ const data = {
     th: 'ส่วนลด 20%',
   },
 };
-
 export const HomeEn = parserObj(data, 'en');
 export const HomeTh = parserObj(data, 'th');
