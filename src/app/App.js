@@ -34,12 +34,20 @@ function App() {
 
         <Route path="/admin/" element={<UserLayout />}>
           <Route index element={<Queue />} />
-          <Route path="queue" element={<Queue />} />
+          <Route path="queues" element={<Queue />} />
           <Route path="sumarize" element={<Sumarize />} />
           <Route path="*" element={<NoPage />} />
         </Route>
 
         <Route path="/admin/info/" element={<UserLayout />}>
+          <Route index element={<ServicesInfo />} />
+          <Route path="promotions" element={<PromotionsInfo />} />
+          <Route path="services" element={<ServicesInfo />} />
+          <Route path="commissions" element={<CommissionsInfo />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+
+        <Route path="/admin/manage/" element={<UserLayout />}>
           <Route index element={<ServicesInfo />} />
           <Route path="promotions" element={<PromotionsInfo />} />
           <Route path="services" element={<ServicesInfo />} />

@@ -1,9 +1,22 @@
 import React from 'react';
 
 function Services() {
-  const packages = ['description,timestamp,name,ms_id,p_id,image'];
-  const data_package = ['10','20.00','who','m01','p01','img']
-  const micro_service = ['type,image,description,ms_id,name,timestamp,price_truck,price_SUV,price_van,price_MC,price_sedan'];
+  const packages = [
+    'description',
+    'timestamp',
+    'name',
+    'ms_id',
+    'p_id',
+    'image',
+  ];
+  const data_package = [
+    ['10', '20.00', 'who', 'm01', 'p01', 'img'],
+    ['10', '20.00', 'who', 'm01', 'p01', 'img'],
+  ];
+
+  const micro_service = [
+    'type,image,description,ms_id,name,timestamp,price_truck,price_SUV,price_van,price_MC,price_sedan',
+  ];
   const mix_package = ['p_id,name,mp_id,description,timestamp,image'];
 
   return (
