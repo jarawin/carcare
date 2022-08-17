@@ -1,12 +1,13 @@
 import React from 'react';
 
 function Commissions() {
-  const column = ['Quota Type', 'Quota Amount', 'Topic', 'Description', 'Commission id', 'Position', 'Baht'];
+  const column = ['Quota Type', 'Quota Amount', 'Topic', 'Description', 'Commission id', 'Position', 'Baht', 'Edit/Delete'];
 
   const data = [
     ['First 2 cars of the day', '5/Month', 'Wash', 'Washing', '#12345', 'Employee', '50'],
     ['First 2 cars of the months', '10/Month', 'Wash', 'Washing', '#12345', 'Manager', '100'],
-
+    ['First 2 cars of the day', '5/Month', 'Wash', 'Washing', '#12345', 'Employee', '50'],
+    ['First 2 cars of the months', '10/Month', 'Wash', 'Washing', '#12345', 'Manager', '100'],
   ];
 
   return (
