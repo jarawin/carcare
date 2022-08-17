@@ -11,7 +11,7 @@ import DatePicker from './DatePicker';
 function Booking() {
   return (
     <div className="">
-      {/* <YingStepper /> */}
+      <YingStepper />
       <div className="max-w-7xl mx-auto">
         <YingCenter1 />
         <YingCenter2 />

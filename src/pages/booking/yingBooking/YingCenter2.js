@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from "react";
-import classNames from "../../../utils/classNames";
-import { GrNext, GrPrevious } from "react-icons/gr";
+import React, { useState, useEffect } from 'react';
+import classNames from '../../../utils/classNames';
+import { GrNext, GrPrevious } from 'react-icons/gr';
 
 function YingCenter2() {
   const [imgDisplay, setImgDisplay] = useState(0);
   const images = [
     {
-      name: "IMG 1",
-      src: "/suv.png",
+      name: 'IMG 1',
+      src: '/suv.png',
     },
     {
-      name: "IMG 2",
-      src: "/truck.png",
+      name: 'IMG 2',
+      src: '/truck.png',
     },
   ];
 
   const handleClick = (e) => {
     const { name } = e.target;
-    if (name === "next") {
+    if (name === 'next') {
       setImgDisplay((imgDisplay + 1) % images.length);
     } else {
       setImgDisplay((imgDisplay - 1 + images.length) % images.length);
@@ -39,8 +39,8 @@ function YingCenter2() {
             <div
               key={index}
               className={classNames(
-                imgDisplay === index ? "" : "hidden",
-                " duration-1000 ease-linear absolute inset-0 transition-all transform"
+                imgDisplay === index ? '' : 'hidden',
+                ' duration-1000 ease-linear absolute inset-0 transition-all transform'
               )}
             >
               <img
@@ -79,7 +79,7 @@ function YingCenter2() {
         <div className=" flex justify-center">
           <button
             type="button"
-            className=" absolute z-50 p-3 rounded-full ring-red-600 ring-2 bg-white text-red-600 font-bold hover:bg-red-600 hover:text-white"
+            className=" absolute p-3 rounded-full ring-red-600 ring-2 bg-white text-red-600 font-bold hover:bg-red-600 hover:text-white"
           >
             Select my vehicle type
           </button>
