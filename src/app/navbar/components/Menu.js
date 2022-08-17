@@ -23,24 +23,36 @@ function Menu(props) {
 
   const pagesAdmin = [
     {
-      name: 'Users',
-      url: '/admin/users',
-    },
-    {
-      name: 'Queue',
-      url: '/admin/queue',
-    },
-    // {
-    //   name: 'Services',
-    //   url: '/admin/services',
-    // },
-    {
-      name: 'Events',
-      url: '/admin/events',
-    },
-    {
       name: 'Sumarize',
       url: '/admin/sumarize',
+    },
+    {
+      name: 'Queues',
+      url: '/admin/queues',
+    },
+    {
+      name: 'Customers',
+      url: '/admin/manage/customers',
+    },
+    {
+      name: 'Members',
+      url: '/admin/manage/members',
+    },
+    {
+      name: 'Employees',
+      url: '/admin/manage/employees',
+    },
+    {
+      name: 'Promotions',
+      url: '/admin/info/promotions',
+    },
+    {
+      name: 'Services',
+      url: '/admin/info/services',
+    },
+    {
+      name: 'Commissions',
+      url: '/admin/info/commissions',
     },
   ];
 

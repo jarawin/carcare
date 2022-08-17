@@ -15,6 +15,10 @@ import Queue from '../pages/admin/queue/Queue';
 import Events from '../pages/admin/events/Events';
 import Sumarize from '../pages/admin/sumarize/Sumarize';
 
+import CommissionsInfo from '../pages/admin/info/commissions/Commissions';
+import PromotionsInfo from '../pages/admin/info/promotions/Promotions';
+import ServicesInfo from '../pages/admin/info/services/Services';
+
 function App() {
   return (
     <BrowserRouter>
@@ -29,12 +33,17 @@ function App() {
         </Route>
 
         <Route path="/admin/" element={<UserLayout />}>
-          <Route index element={<Home />} />
-          <Route path="users" element={<Users />} />
+          <Route index element={<Queue />} />
           <Route path="queue" element={<Queue />} />
-          {/* <Route path="services" element={<ServicesAdmin />} /> */}
-          <Route path="events" element={<Events />} />
           <Route path="sumarize" element={<Sumarize />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+
+        <Route path="/admin/info/" element={<UserLayout />}>
+          <Route index element={<ServicesInfo />} />
+          <Route path="promotions" element={<PromotionsInfo />} />
+          <Route path="services" element={<ServicesInfo />} />
+          <Route path="commission" element={<CommissionsInfo />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
