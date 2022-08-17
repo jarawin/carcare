@@ -9,7 +9,14 @@ function Members() {
     "end_time",
     "action",
   ];
-  const member_data = [["aa01", "sm005", "t01", "12.35", "15.35", "edit"]];
+  const member_data = [
+    ["aa01", "sm005", "t01", "12/04/64", "12/05/64", "Edit"],
+    ["aa02", "sm007", "t02", "19/04/64", "19/05/64", "Edit"],
+    ["aa03", "sm012", "t02", "21/04/64", "21/05/64", "Edit"],
+    ["aa04", "sm023", "t03", "23/04/64", "23/05/64", "Edit"],
+    ["aa05", "sm025", "t04", "27/04/64", "27/05/64", "Edit"],
+  ];
+
   return (
     <div class="overflow-x-auto relative shadow-md ">
       <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
