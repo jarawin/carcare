@@ -9,38 +9,23 @@ function Services() {
     setTableName(e.target.name);
   };
 
-  const packages = [
-    'description',
-    'timestamp',
-    'name',
-    'ms_id',
-    'p_id',
-    'image',
-  ];
-  const data_package = [['10', '20.00', 'who', 'm01', 'p01', 'img']];
+  const packages = ['Description','Timestamp','Name','Member ID','Package ID','Image','Action'];
+  const data_package = [['10', '20.00', 'ใครกัน', 'm01', 'p01', 'img','Edit'],
+  ['5', '9.00', 'ใฝ่ฝัน', 'm02', 'p02', 'img','Edit'],
+  ['7', '10.00', 'เดียวดาย', 'm03', 'p03', 'img','Edit'],
+  ['1', '18.00', 'หรือเบียวดาย', 'm04', 'p04', 'img','Edit']];
 
-  const micro_service = [
-    'car_type',
-    'image',
-    'description',
-    'ms_id',
-    'name',
-    'timestamp',
-    'price',
-  ];
-  const data_micro_service = [
-    ['SUV', 'img', '10', 'm01', 'who', '19.00', '200 bath'],
-  ];
+  const micro_service = ['Car Type','Image','Description','Member ID','Name','Timestamp','Price','Action'];
+  const data_micro_service = [['SUV','img','10','m01','ไผ่พร','19.00','200 bath','Edit'],
+  ['Van','img','8','m02','สุขสันต์','9.00','500 bath','Edit'],
+  ['Truck','img','5','m03','ดีจัง','10.00','1000 bath','Edit'],
+  ['Sedan','img','7','m04','ไม่อยากทำงาน','17.00','700 bath','Edit']];
 
-  const mix_package = [
-    'p_id',
-    'name',
-    'mp_id',
-    'description',
-    'timestamp',
-    'image',
-  ];
-  const data_mix_package = [['p01', 'who', 'm01', '10', '20.00', 'img']];
+  const mix_package = ['Package ID','Name','Mix Package ID','Description','Timestamp','Image','Action'];
+  const data_mix_package = [['p01','กนกกานต์','m01','10','20.00','img','Edit'],
+  ['p02','ไม่เรียนเเล้ว','m02','7','18.00','img','Edit'],
+  ['p03','ไม่เอางานด้วย','m03','6','14.00','img','Edit'],
+  ['p04','กรุกกรัก','m04','8','9.00','img','Edit']];
 
   return (
     <div>
