@@ -15,6 +15,7 @@ function Promotions() {
     "discount_type",
     "discount_baht",
     "is_public",
+    "action",
   ];
   const promotion_data = [
     [
@@ -31,6 +32,7 @@ function Promotions() {
       "percent OR baht",
       "200-",
       "true",
+      "edit",
     ],
   ];
   const promotion_info = [];
