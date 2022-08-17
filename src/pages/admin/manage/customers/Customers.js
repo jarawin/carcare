@@ -1,17 +1,17 @@
 import React from 'react';
 
 function Customers() {
-  const column = ['Image', 'Nickname', 'Phone', 'User id', 'is_register', 'Permission', 'Lasttime Active', 'Register id', 'Email', 'Register time', 'Rank', 'is_member', 'First serve time', 'Action'];
+  const column = ['Image', 'User id', 'Nickname', 'Phone', 'Email', 'Rank', 'Register id', 'First serve time', 'Lasttime Active', 'Register time', 'is_member', 'is_register', 'Action'];
 
   const data = [
-    ['Image', 'Ja', '0987564321', '#456123', '-', '-', '12.00', '-', 'jarawin@gmail.com', '15.00', 'Gold', 'True', '12/04/64', 'Edit'],
-    ['Image', 'Nat', '0987564322', '#456124', '-', '-', '12.00', '-', 'natnat@gmail.com', '15.00', 'Gold', 'True', '19/04/65', 'Edit'],
-    ['Image', 'Ying', '0987564323', '#456125', '-', '-', '12.00', '-', 'yingying@gmail.com', '15.00', 'Gold', 'False', '20/06/65', 'Edit'],
-    ['Image', 'Peem', '0987564324', '#456126', '-', '-', '12.00', '-', 'peempeem@gmail.com', '15.00', 'Silver', 'True', '25/04/65', 'Edit'],
-    ['Image', 'Film', '0987564325', '#456127', '-', '-', '12.00', '-', 'filmfilm@gmail.com', '15.00', 'Silver', 'True', '20/06/65', 'Edit'],
-    ['Image', 'Nam', '0987564326', '#456128', '-', '-', '12.00', '-', 'namnam@gmail.com', '15.00', 'Bronze', 'True', '12/07/65', 'Edit'],
-    ['Image', 'Somruk', '0987564327', '#456129', '-', '-', '12.00', '-', 'somruk@gmail.com', '15.00', 'Bronze', 'True', '21/07/65', 'Edit'],
-    ['Image', 'But', '0987564328', '#456130', '-', '-', '12.00', '-', 'butbut@gmail.com', '15.00', 'Bronze', 'False', '08/08/65', 'Edit'],
+    ['Image', '#456123', 'Ja', '0987564321', 'jarawin@gmail.com', 'Gold', '#12345', '13/02/64 : 12.00', '13/02/64 : 15.00', '12/04/64 : 15.00', 'True', 'False', 'Edit'],
+    ['Image', '#456124', 'Nat', '0987564322', 'natnat@gmail.com', 'Gold', , '#12346', '13/02/64 : 12.00', '13/02/64 : 15.00', '19/04/65 : 15.00', 'True', 'False', 'Edit'],
+    ['Image', '#456125', 'Ying', '0987564323', 'yingying@gmail.com', 'Gold', '#12347', '13/02/64 : 12.00', '13/02/64 : 15.00', '20/06/65 : 15.00', 'False', 'False', 'Edit'],
+    ['Image', '#456126', 'Peem', '0987564324', 'peempeem@gmail.com', 'Silver', '#12348', '13/02/64 : 12.00', '13/02/64 : 15.00', '25/04/65 : 15.00', 'True', 'False', 'Edit'],
+    ['Image', '#456127', 'Film', '0987564325', 'filmfilm@gmail.com', 'Silver', '#12349', '13/02/64 : 12.00', '13/02/64 : 15.00', '20/06/65 : 15.00', 'True', 'False', 'Edit'],
+    ['Image', '#456128', 'Nam', '0987564326', 'namnam@gmail.com', 'Bronze', '#12350', '13/02/64 : 12.00', '13/02/64 : 15.00', '12/07/65 : 15.00', 'True', 'False', 'Edit'],
+    ['Image', '#456129', 'Somruk', '0987564327', 'somruk@gmail.com', 'Bronze', '#12351', '13/02/64 : 12.00', '13/02/64 : 15.00', '21/07/65 : 15.00', 'True', 'False', 'Edit'],
+    ['Image', '#456130', 'But', '0987564328', 'butbut@gmail.com', 'Bronze', '#12352', '13/02/64 : 12.00', '13/02/64 : 15.00', '08/08/65 : 15.00', 'False', 'False', 'Edit'],
   ];
 
   return (
@@ -33,6 +33,7 @@ function Customers() {
               key={index}
               class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
             >
+
               {item.map((item, index) => (
                 <td
                   key={index}
