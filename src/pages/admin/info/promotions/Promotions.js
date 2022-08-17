@@ -7,7 +7,7 @@ function Promotions() {
   const promotion_info = [
     "promotion_id, service_id, type_of_car, discount_type, discount_baht",
   ];
-  const column = ["Name", "tel"];
+
   const data = [
     ["ja1", "0911700623"],
     ["ja2", "0987652021"],
