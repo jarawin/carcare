@@ -1,7 +1,7 @@
 import React from 'react';
 
-function employees() {
+function Employees() {
   return <div>employees</div>;
 }
 
-export default employees;
+export default Employees;
