@@ -43,7 +43,7 @@ function App() {
           <Route index element={<ServicesInfo />} />
           <Route path="promotions" element={<PromotionsInfo />} />
           <Route path="services" element={<ServicesInfo />} />
-          <Route path="commission" element={<CommissionsInfo />} />
+          <Route path="commissions" element={<CommissionsInfo />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
