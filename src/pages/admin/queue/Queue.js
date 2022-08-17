@@ -8,6 +8,7 @@ function Queue() {
           <tr>
             <th scope="col" class="py-3 px-6">
               <span class="sr-only">Image</span>
+              image
             </th>
             <th scope="col" class="py-3 px-6">
               name
