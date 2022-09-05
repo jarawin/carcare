@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-05T14:34:07.225Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="vj8fbsji0W5g6wLadKkU" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-05T14:45:46.636Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="MR0lq9rGKJCelrflrIFp" version="20.2.8" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="3153" dy="2047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" background="none" math="0" shadow="1" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="573" dy="372" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" background="none" math="0" shadow="1" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,6 +8,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hB8N9sjjw06V4UvG1Mpu-91" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="PzxKSnyha53FVGnrYv1--1" target="hB8N9sjjw06V4UvG1Mpu-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hB8N9sjjw06V4UvG1Mpu-96" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="1" source="PzxKSnyha53FVGnrYv1--1" target="hB8N9sjjw06V4UvG1Mpu-95">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PzxKSnyha53FVGnrYv1--1" value="Employee" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
@@ -382,7 +385,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zKtCxsfTcgN2iYhmThE1-47" value="salary_amount" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="825" y="685" width="90" height="50" as="geometry" />
+          <mxGeometry x="850" y="730" width="90" height="50" as="geometry" />
         </mxCell>
         <mxCell id="zKtCxsfTcgN2iYhmThE1-52" style="edgeStyle=none;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zKtCxsfTcgN2iYhmThE1-48" target="hB8N9sjjw06V4UvG1Mpu-83" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -392,7 +395,7 @@
         <mxCell id="pMIZkNUXwfwmyM_HFmga-34" value="ms_id" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="2312.5" y="1850" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="zKtCxsfTcgN2iYhmThE1-48" value="salary_type" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="zKtCxsfTcgN2iYhmThE1-48" value="_amount" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="690" width="90" height="50" as="geometry" />
         </mxCell>
         <mxCell id="pMIZkNUXwfwmyM_HFmga-35" value="pk_id" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
@@ -1341,7 +1344,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hB8N9sjjw06V4UvG1Mpu-83" value="history_salary" style="ellipse;shape=doubleEllipse;margin=3;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="815" y="635" width="100" height="40" as="geometry" />
+          <mxGeometry x="800" y="675" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="hB8N9sjjw06V4UvG1Mpu-84" value="daily" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="775" y="945" width="90" height="50" as="geometry" />
@@ -1354,6 +1357,9 @@
         </mxCell>
         <mxCell id="hB8N9sjjw06V4UvG1Mpu-90" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;employee_type&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1140" y="635" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hB8N9sjjw06V4UvG1Mpu-95" value="Attribute" style="ellipse;shape=doubleEllipse;margin=3;whiteSpace=wrap;html=1;align=center;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="700" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
