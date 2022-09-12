@@ -1,14 +1,32 @@
-<mxfile host="app.diagrams.net" modified="2022-09-12T03:41:19.455Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="RfsALnfhrEH1J9y7q_w4" version="20.3.0" type="github" pages="8">
-  <diagram id="5M1sIQgvRLzYB9faPuPS" name="Page-8">
-    <mxGraphModel dx="1051" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2022-09-12T06:13:22.274Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="amT-4fjMsXmr89TrDsHp" version="20.3.0" type="github" pages="8">
+  <diagram id="5M1sIQgvRLzYB9faPuPS" name="DFD">
+    <mxGraphModel dx="1113" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="LO1tjfmVQ55Uj79wt9Rq-1" value="0" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="334" y="525" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="LO1tjfmVQ55Uj79wt9Rq-2" value="carcare &#xa;management &#xa;system" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=20;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="LO1tjfmVQ55Uj79wt9Rq-1">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LO1tjfmVQ55Uj79wt9Rq-3" value="cutomer" style="whiteSpace=wrap;html=1;align=center;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="200" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LO1tjfmVQ55Uj79wt9Rq-4" value="employee" style="whiteSpace=wrap;html=1;align=center;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="530" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LO1tjfmVQ55Uj79wt9Rq-5" value="&amp;nbsp;A&amp;nbsp; customer information" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="340" y="830" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LO1tjfmVQ55Uj79wt9Rq-7" value="&amp;nbsp;B&amp;nbsp; employee information" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="340" y="880" width="230" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="3271" dy="2191" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2115" dy="1441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
