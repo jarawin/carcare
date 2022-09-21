@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-21T03:15:29.556Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="opyZGSs6TeEZ8HnJ83rz" version="20.3.0" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2022-09-21T03:25:23.711Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="dqqxDFigBjnh9ZIX9VN5" version="20.3.0" type="github" pages="11">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="4175" dy="2520" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -1060,6 +1060,28 @@
         </mxCell>
         <mxCell id="NJdjG7dpaiclOIcA1Gsu-14" value="&lt;div&gt;Working Attendance&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="930.002727272728" y="870.0000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="NJdjG7dpaiclOIcA1Gsu-23" value="Salary Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="560.002727272728" y="585.0000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="NJdjG7dpaiclOIcA1Gsu-24" value="Car Wash Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="620.002727272728" y="610.0000000000002" as="geometry">
+            <mxPoint x="-11" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NJdjG7dpaiclOIcA1Gsu-25" value="Commission Notification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="670.002727272728" y="660.0000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="NJdjG7dpaiclOIcA1Gsu-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.001;exitY=0.963;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="QqWPaEo2zyt3RHamq0hj-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="599" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NJdjG7dpaiclOIcA1Gsu-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.002;exitY=0.814;exitDx=0;exitDy=0;entryX=0.878;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="QqWPaEo2zyt3RHamq0hj-9" target="QqWPaEo2zyt3RHamq0hj-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NJdjG7dpaiclOIcA1Gsu-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.001;exitY=0.666;exitDx=0;exitDy=0;entryX=0.77;entryY=0.001;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="QqWPaEo2zyt3RHamq0hj-9" target="QqWPaEo2zyt3RHamq0hj-40">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
