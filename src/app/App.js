@@ -23,7 +23,6 @@ import Members from '../pages/admin/manage/members/Members';
 import Customers from '../pages/admin/manage/customers/Customers';
 import Employees from '../pages/admin/manage/employees/Employees';
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -35,29 +34,29 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="test" element={<Test />} />
           <Route path="*" element={<NoPage />} />
-        </Route>
 
-        <Route path="/admin/" element={<UserLayout />}>
-          <Route index element={<Queue />} />
-          <Route path="queues" element={<Queue />} />
-          <Route path="sumarize" element={<Sumarize />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
+          <Route path="admin/">
+            <Route index element={<Queue />} />
+            <Route path="queues" element={<Queue />} />
+            <Route path="sumarize" element={<Sumarize />} />
+            <Route path="*" element={<NoPage />} />
 
-        <Route path="/admin/info/" element={<UserLayout />}>
-          <Route index element={<ServicesInfo />} />
-          <Route path="promotions" element={<PromotionsInfo />} />
-          <Route path="services" element={<ServicesInfo />} />
-          <Route path="commissions" element={<CommissionsInfo />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
+            <Route path="info/">
+              <Route index element={<ServicesInfo />} />
+              <Route path="promotions" element={<PromotionsInfo />} />
+              <Route path="services" element={<ServicesInfo />} />
+              <Route path="commissions" element={<CommissionsInfo />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
 
-        <Route path="/admin/manage/" element={<UserLayout />}>
-          <Route index element={<Customers />} />
-          <Route path="customers" element={<Customers />} />
-          <Route path="employees" element={<Employees />} />
-          <Route path="members" element={<Members />} />
-          <Route path="*" element={<NoPage />} />
+            <Route path="manage/">
+              <Route index element={<Customers />} />
+              <Route path="customers" element={<Customers />} />
+              <Route path="employees" element={<Employees />} />
+              <Route path="members" element={<Members />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
