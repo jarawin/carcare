@@ -1,9 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2022-09-23T16:15:58.251Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ScLLHhB0szB5Lx2vvjkv" version="20.3.6" type="github" pages="9">
-  <diagram id="OdQc7W83qYi903VyMi7l" name="DFD">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2022-09-24T17:10:39.076Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="5ApqNF23K8aqlNBrVixQ" version="20.3.6" type="github" pages="9">
+  <diagram id="OdQc7W83qYi903VyMi7l" name="Deployment Diagram">
+    <mxGraphModel dx="1285" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="mImAr-CVrIRnTz1cQua3-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mImAr-CVrIRnTz1cQua3-1" target="mImAr-CVrIRnTz1cQua3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mImAr-CVrIRnTz1cQua3-12" value="Internet" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mImAr-CVrIRnTz1cQua3-9">
+          <mxGeometry x="-0.2718" y="-1" relative="1" as="geometry">
+            <mxPoint x="11" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mImAr-CVrIRnTz1cQua3-1" value="Web Browser &lt;br&gt;Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mImAr-CVrIRnTz1cQua3-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mImAr-CVrIRnTz1cQua3-6" target="mImAr-CVrIRnTz1cQua3-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mImAr-CVrIRnTz1cQua3-14" value="Internet" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mImAr-CVrIRnTz1cQua3-10">
+          <mxGeometry x="-0.241" y="-2" relative="1" as="geometry">
+            <mxPoint x="10" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mImAr-CVrIRnTz1cQua3-6" value="Carcare Management&lt;br&gt;System Template" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mImAr-CVrIRnTz1cQua3-8" value="Database &lt;br&gt;Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="160" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
