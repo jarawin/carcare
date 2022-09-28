@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-28T08:02:28.860Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="vqevEGZ9tASHqpJHg6Kx" version="20.3.7" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2022-09-28T08:05:06.504Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="jWo9n2JuHJvm7BUUiTyE" version="20.3.7" type="github" pages="10">
   <diagram name="checker" id="4z2nLp_nAIOizFBoiBsx">
     <mxGraphModel dx="2693" dy="1367" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="1" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -5529,12 +5529,6 @@
             <mxPoint x="830" y="-70" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GHuWQIdKYT-7E__73nb9-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.184;entryY=-0.043;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="975.8900000000001" y="-108.27999999999975" as="sourcePoint" />
-            <mxPoint x="974.9999999999998" y="-70" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="GHuWQIdKYT-7E__73nb9-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0.048;exitY=0.024;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="430.34999999999997" y="-69.03999999999996" as="sourcePoint" />
@@ -5545,6 +5539,12 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="900.8899999999999" y="-108.27999999999975" as="sourcePoint" />
             <mxPoint x="900" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GHuWQIdKYT-7E__73nb9-14" value="" style="endArrow=none;html=1;rounded=0;exitX=0.048;exitY=0.024;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="980.3499999999999" y="-69.04000000000042" as="sourcePoint" />
+            <mxPoint x="980.31" y="-110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
