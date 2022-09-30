@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-30T09:40:19.967Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="TsYS_BWwMm6e82yTkERm" version="20.3.7" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2022-09-30T09:41:26.012Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="6bc9vtR8W1TTAkdSEqpu" version="20.3.7" type="github" pages="10">
   <diagram id="VZlUaImB-o4riFgnqdvo" name="Page-9">
     <mxGraphModel dx="2807" dy="1768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1892,10 +1892,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TWjyLcKv3U3jzfa1hPAc-11" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;html=1;" parent="1" vertex="1">
-          <mxGeometry x="29" y="150" width="537" height="40" as="geometry" />
+          <mxGeometry x="29" y="150" width="383" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TWjyLcKv3U3jzfa1hPAc-12" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;html=1;" parent="TWjyLcKv3U3jzfa1hPAc-11" vertex="1">
-          <mxGeometry width="537" height="40" as="geometry" />
+          <mxGeometry width="383" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TWjyLcKv3U3jzfa1hPAc-13" value="&lt;span style=&quot;font-size: 8pt; line-height: 106%; font-family: Helvetica, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;limit_amount&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=0;" parent="TWjyLcKv3U3jzfa1hPAc-12" vertex="1">
           <mxGeometry width="77" height="40" as="geometry">
@@ -1912,23 +1912,13 @@
             <mxRectangle width="77" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TWjyLcKv3U3jzfa1hPAc-16" value="&lt;span style=&quot;font-size: 8pt; line-height: 106%; font-family: Helvetica, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;specialdayflag&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=0;" parent="TWjyLcKv3U3jzfa1hPAc-12" vertex="1">
-          <mxGeometry x="230" width="77" height="40" as="geometry">
-            <mxRectangle width="77" height="40" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="TWjyLcKv3U3jzfa1hPAc-17" value="&lt;span style=&quot;font-size: 8pt; line-height: 106%; font-family: Helvetica, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;day_type&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=0;" parent="TWjyLcKv3U3jzfa1hPAc-12" vertex="1">
-          <mxGeometry x="307" width="77" height="40" as="geometry">
-            <mxRectangle width="77" height="40" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="TWjyLcKv3U3jzfa1hPAc-18" value="&lt;span style=&quot;font-size:8.0pt;line-height:106%;&lt;br/&gt;font-family:&amp;quot;Helvetica&amp;quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:&lt;br/&gt;minor-latin;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:&lt;br/&gt;TH&quot;&gt;rankflag&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=0;" parent="TWjyLcKv3U3jzfa1hPAc-12" vertex="1">
-          <mxGeometry x="384" width="76" height="40" as="geometry">
+          <mxGeometry x="230" width="76" height="40" as="geometry">
             <mxRectangle width="76" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TWjyLcKv3U3jzfa1hPAc-19" value="&lt;span style=&quot;font-size: 8pt; line-height: 106%; font-family: Helvetica, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;rank&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;startSize=0;" parent="TWjyLcKv3U3jzfa1hPAc-12" vertex="1">
-          <mxGeometry x="460" width="77" height="40" as="geometry">
+          <mxGeometry x="306" width="77" height="40" as="geometry">
             <mxRectangle width="77" height="40" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
