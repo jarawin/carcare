@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-30T03:42:58.680Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="CoQfwasCkMGOrnqOsMIF" version="20.3.7" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2022-09-30T03:47:05.150Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="6dyu4IGNHeNV6AXrp1WE" version="20.3.7" type="github" pages="11">
   <diagram id="TjMaUTZzYpLtjaPDfiLP" name="Page-10">
     <mxGraphModel dx="2076" dy="1078" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -1674,7 +1674,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="_GUEVZt6tiv-Ulbc_ku2" name="Page-11">
-    <mxGraphModel dx="830" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1384" dy="1888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1727,38 +1727,8 @@
         <mxCell id="Mt278cbe2pOA3sLcTxOe-10" value="manage workleave" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=20;verticalAlign=middle;resizable=0;rotatable=0;part=1;" vertex="1" parent="Mt278cbe2pOA3sLcTxOe-9">
           <mxGeometry y="30" width="188" height="87" as="geometry" />
         </mxCell>
-        <mxCell id="Mt278cbe2pOA3sLcTxOe-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.001;exitY=0.153;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mt278cbe2pOA3sLcTxOe-13">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="950" y="-326.5" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="592" y="80" />
-              <mxPoint x="540" y="80" />
-              <mxPoint x="540" y="-330" />
-              <mxPoint x="950" y="-330" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Mt278cbe2pOA3sLcTxOe-12" value="workleave info" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mt278cbe2pOA3sLcTxOe-11">
-          <mxGeometry x="0.6249" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="Mt278cbe2pOA3sLcTxOe-13" value="&amp;nbsp;D&amp;nbsp; employee workleave info" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="592" y="60" width="288" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="Mt278cbe2pOA3sLcTxOe-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="600" y="-200" as="sourcePoint" />
-            <mxPoint x="950" y="-290" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="600" y="-290" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Mt278cbe2pOA3sLcTxOe-15" value="attendance info" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Mt278cbe2pOA3sLcTxOe-14">
-          <mxGeometry x="0.1587" y="3" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="Mt278cbe2pOA3sLcTxOe-16" value="&amp;nbsp;F&amp;nbsp; employee attendance info" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="583" y="-199" width="290" height="66" as="geometry" />
