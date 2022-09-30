@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-30T15:28:47.918Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="xH45LF2tVbxmReWZjtN2" version="20.3.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-09-30T15:32:26.190Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="6DMa2eVIMm4ikLVg5hhZ" version="20.3.7" type="github" pages="4">
   <diagram id="MrfUgjtk8RshOKE2H2-e" name="Page-1">
     <mxGraphModel dx="1896" dy="3343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2865,7 +2865,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="U-3mU-74rDvG9G5ot2oj" name="Page-4">
-    <mxGraphModel dx="1354" dy="1887" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2188" dy="2329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3599,6 +3599,26 @@
           <mxGeometry x="230" width="77" height="40" as="geometry">
             <mxRectangle width="77" height="40" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="P9R-CLX91FvvQaAP3eb_" name="Page-5">
+    <mxGraphModel dx="1422" dy="3092" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="G__CROIryG2fk8fcI8Fv-1" value="&lt;b&gt;แปลงเป็น 1NF&lt;/b&gt; ตอนนี้ relation เป็น 1NF อยู่แล้ว เพราะทุก attributeเป็น atomic attribute" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="-1920" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G__CROIryG2fk8fcI8Fv-2" value="&lt;b&gt;แปลงเป็น 2NF &lt;/b&gt;กำจัด partial dependencies(prime -&amp;gt; nonprime)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="-1870" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G__CROIryG2fk8fcI8Fv-3" value="&lt;b&gt;แปลงเป็น 3NF&lt;/b&gt; ตอนนี้ relation เป็น 3NF อยู่แล้ว เพราะ ไม่มี partial dependencies(nonprime -&amp;gt; nonprime)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="-1570" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G__CROIryG2fk8fcI8Fv-4" value="&lt;b&gt;แปลงเป็น BCNF&lt;/b&gt;&amp;nbsp;ตอนนี้ relation เป็น BCNF อยู่แล้ว เพราะ ไม่มี partial dependencies(nonprime -&amp;gt; prime)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="-1490" width="560" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
