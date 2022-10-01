@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-01T06:03:48.845Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="DqsJhvKr-NUa3nrQF4xh" version="20.4.0" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2022-10-01T06:07:43.492Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="fTPHYqZTZkebbHne-3-j" version="20.4.0" type="github" pages="11">
   <diagram id="TjMaUTZzYpLtjaPDfiLP" name="Page-10">
-    <mxGraphModel dx="511" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1059" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -245,11 +245,11 @@
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-39" value="Confirmation Buy" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="nr0hAvdDId6Z5IJpEtOB-38" vertex="1" connectable="0">
           <mxGeometry x="0.1194" y="1" relative="1" as="geometry">
-            <mxPoint x="6" y="11" as="offset" />
+            <mxPoint x="-14" y="31" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-41" value="Confirmation Login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1949.999479735389" y="549.995687172228" as="geometry" />
+          <mxGeometry x="1929.999479735389" y="569.995687172228" as="geometry" />
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-42" value="Registration Confirmation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1819.9994797353893" y="409.99568717222803" as="geometry" />
@@ -314,7 +314,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-59" value="Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1919.9994797353893" y="609.995687172228" as="geometry" />
+          <mxGeometry x="1899.9994797353893" y="629.995687172228" as="geometry" />
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.002;exitY=0.742;exitDx=0;exitDy=0;entryX=0.158;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="nr0hAvdDId6Z5IJpEtOB-7" target="nr0hAvdDId6Z5IJpEtOB-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -327,8 +327,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-64" value="Special Subscription Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1529.996571428571" y="870" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-64" value="Customer Request Success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1939.996571428571" y="530" as="geometry" />
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-65" value="Promotional Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1489.9994797353893" y="889.995687172228" as="geometry" />
@@ -389,10 +389,22 @@
           <mxGeometry x="679.997860743316" y="409.9952147538477" as="geometry" />
         </mxCell>
         <mxCell id="ThtSRWl7tpQaj87L0JRd-1" value="Confirmation Create Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1949.9999603732592" y="530" as="geometry" />
+          <mxGeometry x="1929.9999603732592" y="550" as="geometry" />
         </mxCell>
         <mxCell id="ThtSRWl7tpQaj87L0JRd-2" value="Receipt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="1929.9999603732592" y="590" as="geometry" />
+          <mxGeometry x="1909.9999603732592" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-3" value="Customer Edit Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1509.996571428571" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.002;exitY=0.742;exitDx=0;exitDy=0;entryX=0.105;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" target="nr0hAvdDId6Z5IJpEtOB-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1452.004" y="640.04" as="sourcePoint" />
+            <mxPoint x="1938.4879999999998" y="889.2" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1920" y="640" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
