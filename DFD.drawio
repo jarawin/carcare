@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-01T06:15:05.623Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Dyr82dr98zUPXZfTVBVi" version="20.4.0" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2022-10-01T06:18:44.609Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="AoKkKjSSu56DSfbeWGb3" version="20.4.0" type="github" pages="11">
   <diagram id="TjMaUTZzYpLtjaPDfiLP" name="Page-10">
-    <mxGraphModel dx="2088" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1022" dy="950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -242,26 +242,28 @@
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-43" value="Confirmation Login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1819.9994797353893" y="389.99568717222803" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-44" value="Promotional Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="950.002727272728" y="890.0000000000002" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-44" value="Employee Detail" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="960.002727272728" y="890.0000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-45" value="Customer Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="980.002727272728" y="910.0000000000002" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-45" value="Request Login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="990.002727272728" y="910.0000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-46" value="Request for Salary Advance" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="980.002727272728" y="930.0000000000002" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-46" value="Confirm Slip" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1010.002727272728" y="930.0000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-47" value="Service Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1020.002727272728" y="950.0000000000002" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-47" value="Edit Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1040.002727272728" y="950.0000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-48" value="Queue Management Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1010.002727272728" y="970.0000000000002" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-48" value="Add attendance" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1050.002727272728" y="970.0000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-49" value="Filing for Leave" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-49" value="Add Workleave" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1070.002727272728" y="990.0000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-50" value="&lt;div&gt;Working Attendance&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="940.002727272728" y="870.0000000000002" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-50" value="Employee Edit Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="920.002727272728" y="870.0000000000002" as="geometry">
+            <mxPoint x="9" y="-3" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-51" value="Salary Information" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="610.002727272728" y="630.0000000000002" as="geometry" />
@@ -367,16 +369,16 @@
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-76" value="Response Booking Confirmation SMS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;rotation=0;fontColor=#5C5C5C;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="679.997860743316" y="409.9952147538477" as="geometry" />
         </mxCell>
-        <mxCell id="ThtSRWl7tpQaj87L0JRd-1" value="Confirmation Create Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" connectable="0" vertex="1">
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-1" value="Confirmation Create Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="1929.9999603732592" y="550" as="geometry" />
         </mxCell>
-        <mxCell id="ThtSRWl7tpQaj87L0JRd-2" value="Receipt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" connectable="0" vertex="1">
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-2" value="Receipt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="1909.9999603732592" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="ThtSRWl7tpQaj87L0JRd-3" value="Customer Edit Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" connectable="0" vertex="1">
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-3" value="Customer Edit Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="1499.996571428571" y="890" as="geometry" />
         </mxCell>
-        <mxCell id="ThtSRWl7tpQaj87L0JRd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.002;exitY=0.742;exitDx=0;exitDy=0;entryX=0.105;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" target="nr0hAvdDId6Z5IJpEtOB-21" edge="1">
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.002;exitY=0.742;exitDx=0;exitDy=0;entryX=0.105;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" target="nr0hAvdDId6Z5IJpEtOB-21">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1452.004" y="640.04" as="sourcePoint" />
             <mxPoint x="1938.4879999999998" y="889.2" as="targetPoint" />
@@ -422,7 +424,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hxJTwfKk-H5Xy9anXFuF" name="DFD ใหม่">
-    <mxGraphModel dx="2315" dy="2720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -960,7 +962,7 @@
         <mxCell id="S4vICWb9RmVqiigJqbIK-67" value="&amp;nbsp;B&amp;nbsp; employee info" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];fontSize=20;" parent="1" vertex="1">
           <mxGeometry x="960" y="-1040" width="230" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="S4vICWb9RmVqiigJqbIK-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.002;exitY=0.533;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.554;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="S4vICWb9RmVqiigJqbIK-66" target="S4vICWb9RmVqiigJqbIK-98" edge="1">
+        <mxCell id="S4vICWb9RmVqiigJqbIK-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.002;exitY=0.533;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.554;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="S4vICWb9RmVqiigJqbIK-66" edge="1" target="S4vICWb9RmVqiigJqbIK-98">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-240.00000000000045" y="-250" as="targetPoint" />
             <Array as="points">
