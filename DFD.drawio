@@ -1,22 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2022-10-01T06:27:50.578Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="8nWJDVZ6E7lpvnl9YuGU" version="20.4.0" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2022-10-02T07:29:14.654Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="BAD4MBLm2fyUxbKN-P4B" version="20.4.0" type="github" pages="11">
   <diagram id="TjMaUTZzYpLtjaPDfiLP" name="Page-10">
-    <mxGraphModel dx="1460" dy="1357" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="302" dy="354" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.974;exitY=0.004;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.962;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;strokeColor=#006658;fontColor=#5C5C5C;" parent="1" source="nr0hAvdDId6Z5IJpEtOB-6" target="nr0hAvdDId6Z5IJpEtOB-9" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2020.2400000000016" y="440.24000000000024" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="1440" y="280" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-2" value="Request Register" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;fontColor=#5C5C5C;" parent="nr0hAvdDId6Z5IJpEtOB-1" vertex="1" connectable="0">
-          <mxGeometry x="0.1299" y="-1" relative="1" as="geometry">
-            <mxPoint x="-150" y="-12" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.021;exitY=-0.001;exitDx=0;exitDy=0;fontSize=48;exitPerimeter=0;strokeColor=#006658;fontColor=#5C5C5C;entryX=1.003;entryY=0.958;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="nr0hAvdDId6Z5IJpEtOB-6" target="nr0hAvdDId6Z5IJpEtOB-14" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="700" y="430" as="targetPoint" />
@@ -25,9 +12,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-4" value="Request Booking Confirmation SMS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;rotation=0;fontColor=#5C5C5C;" parent="nr0hAvdDId6Z5IJpEtOB-3" vertex="1" connectable="0">
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-4" value="Message Notify" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;rotation=0;fontColor=#5C5C5C;" parent="nr0hAvdDId6Z5IJpEtOB-3" vertex="1" connectable="0">
           <mxGeometry x="0.1374" y="1" relative="1" as="geometry">
-            <mxPoint x="79" y="-11" as="offset" />
+            <mxPoint x="129" y="-11" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="nr0hAvdDId6Z5IJpEtOB-6" edge="1">
@@ -56,15 +43,6 @@
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-9" value="Firebase Authentication" style="whiteSpace=wrap;html=1;align=center;fontSize=26;fontStyle=1;fillColor=#21C0A5;strokeColor=#006658;fontColor=#5C5C5C;" parent="1" vertex="1">
           <mxGeometry x="1880" y="40" width="376" height="250" as="geometry" />
-        </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.999;entryY=0.029;entryDx=0;entryDy=0;strokeColor=#006658;fontColor=#5C5C5C;entryPerimeter=0;" parent="1" source="nr0hAvdDId6Z5IJpEtOB-9" target="nr0hAvdDId6Z5IJpEtOB-6" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2039.9999999999998" y="194.0040000000001" as="sourcePoint" />
-            <mxPoint x="2049.496000000001" y="439.52" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1880" y="400" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.88;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#006658;fontColor=#5C5C5C;exitX=0.931;exitY=-0.003;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="nr0hAvdDId6Z5IJpEtOB-6" target="nr0hAvdDId6Z5IJpEtOB-9" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -236,11 +214,8 @@
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-41" value="Confirmation Login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1929.999479735389" y="569.995687172228" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-42" value="Registration Confirmation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1819.9994797353893" y="409.99568717222803" as="geometry" />
-        </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-43" value="Confirmation Login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1819.9994797353893" y="389.99568717222803" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-42" value="data user" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="1869.9994797353893" y="409.99568717222803" as="geometry" />
         </mxCell>
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-44" value="Employee Detail" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="960.002727272728" y="890.0000000000002" as="geometry" />
@@ -366,19 +341,19 @@
         <mxCell id="nr0hAvdDId6Z5IJpEtOB-73" value="Employee Request Success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="570.002727272728" y="570.0000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="nr0hAvdDId6Z5IJpEtOB-76" value="Response Booking Confirmation SMS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;rotation=0;fontColor=#5C5C5C;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="679.997860743316" y="409.9952147538477" as="geometry" />
+        <mxCell id="nr0hAvdDId6Z5IJpEtOB-76" value="Confirmation notify" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;rotation=0;fontColor=#5C5C5C;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="639.997860743316" y="409.9952147538477" as="geometry" />
         </mxCell>
-        <mxCell id="ThtSRWl7tpQaj87L0JRd-1" value="Confirmation Create Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-1" value="Confirmation Create Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1929.9999603732592" y="550" as="geometry" />
         </mxCell>
-        <mxCell id="ThtSRWl7tpQaj87L0JRd-2" value="Receipt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-2" value="Receipt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1909.9999603732592" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="ThtSRWl7tpQaj87L0JRd-3" value="Customer Edit Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" vertex="1" connectable="0" parent="1">
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-3" value="Customer Edit Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;rotation=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1499.996571428571" y="890" as="geometry" />
         </mxCell>
-        <mxCell id="ThtSRWl7tpQaj87L0JRd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.002;exitY=0.742;exitDx=0;exitDy=0;entryX=0.105;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" target="nr0hAvdDId6Z5IJpEtOB-21">
+        <mxCell id="ThtSRWl7tpQaj87L0JRd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.002;exitY=0.742;exitDx=0;exitDy=0;entryX=0.105;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" target="nr0hAvdDId6Z5IJpEtOB-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1452.004" y="640.04" as="sourcePoint" />
             <mxPoint x="1938.4879999999998" y="889.2" as="targetPoint" />
