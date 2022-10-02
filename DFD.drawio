@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-02T07:35:51.055Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="zYd5gsFZKTo489xxFac8" version="20.4.0" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2022-10-02T07:36:09.092Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="RHIL3sI24t0YJWdXupr7" version="20.4.0" type="github" pages="11">
   <diagram id="TjMaUTZzYpLtjaPDfiLP" name="Page-10">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -425,7 +425,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hxJTwfKk-H5Xy9anXFuF" name="DFD ใหม่">
-    <mxGraphModel dx="4040" dy="3321" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1928" dy="2451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -717,9 +717,9 @@
             <mxPoint x="79.83999999999978" y="-789.9999999999998" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="26-_QEdhsg3uctZ_GNh8-19" value="data user" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="S4vICWb9RmVqiigJqbIK-29" vertex="1" connectable="0">
+        <mxCell id="26-_QEdhsg3uctZ_GNh8-19" value="data user" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;" parent="S4vICWb9RmVqiigJqbIK-29" vertex="1" connectable="0">
           <mxGeometry x="0.4158" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="25" y="-59" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S4vICWb9RmVqiigJqbIK-1" value="firebase authentication" style="whiteSpace=wrap;html=1;align=center;fontSize=20;" parent="1" vertex="1">
@@ -777,9 +777,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1NZBIHwXVsQc4CvPOvai-1" value="request login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="S4vICWb9RmVqiigJqbIK-28" vertex="1" connectable="0">
+        <mxCell id="1NZBIHwXVsQc4CvPOvai-1" value="request login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;" parent="S4vICWb9RmVqiigJqbIK-28" vertex="1" connectable="0">
           <mxGeometry x="-0.2662" y="2" relative="1" as="geometry">
-            <mxPoint x="-8" y="-3" as="offset" />
+            <mxPoint x="12" y="-38" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S4vICWb9RmVqiigJqbIK-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="S4vICWb9RmVqiigJqbIK-44" edge="1">
