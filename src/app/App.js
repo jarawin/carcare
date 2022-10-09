@@ -1,41 +1,41 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import UserLayout from './layout/UserLayout';
-import AdminLayout from './layout/AdminLayout';
-import Home from '../pages/home/Home';
-import NoPage from '../pages/nopage/NoPage';
-import Booking from '../pages/booking/Booking';
-import Login from '../pages/login/Login';
-import Test from '../pages/test/Test';
-import Services from '../pages/services/Services';
-import ServicesAdmin from '../pages/admin/services/Services';
-import Users from '../pages/admin/users/Users';
-import Queue from '../pages/admin/queue/Queue';
-import Events from '../pages/admin/events/Events';
-import Sumarize from '../pages/admin/sumarize/Sumarize';
+import Layout from './Layout';
 
-import CommissionsInfo from '../pages/admin/info/commissions/Commissions';
-import PromotionsInfo from '../pages/admin/info/promotions/Promotions';
-import ServicesInfo from '../pages/admin/info/services/Services';
+const Home = React.lazy(() => import('../pages/home/Home'));
+const Booking = React.lazy(() => import('../pages/booking/Booking'));
+const Booking2 = React.lazy(() => import('../pages/booking2/Booking2'));
+const Services = React.lazy(() => import('../pages/services/Services'));
+const NoPage = React.lazy(() => import('../pages/nopage/NoPage'));
+const Form = React.lazy(() => import('../pages/Form/Form'));
 
-import Members from '../pages/admin/manage/members/Members';
-import Customers from '../pages/admin/manage/customers/Customers';
-import Employees from '../pages/admin/manage/employees/Employees';
+// import Login from '../pages/login/Login';
+// import Test from '../pages/test/Test';
+// import Queue from '../pages/admin/queue/Queue';
+// import Sumarize from '../pages/admin/sumarize/Sumarize';
+
+// import CommissionsInfo from '../pages/admin/info/commissions/Commissions';
+// import PromotionsInfo from '../pages/admin/info/promotions/Promotions';
+// import ServicesInfo from '../pages/admin/info/services/Services';
+
+// import Members from '../pages/admin/manage/members/Members';
+// import Customers from '../pages/admin/manage/customers/Customers';
+// import Employees from '../pages/admin/manage/employees/Employees';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<UserLayout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="booking" element={<Booking />} />
+          <Route path="booking2" element={<Booking2 />} />
+          <Route path="form" element={<Form />} />
           <Route path="services" element={<Services />} />
-          <Route path="login" element={<Login />} />
-          <Route path="test" element={<Test />} />
           <Route path="*" element={<NoPage />} />
 
-          <Route path="admin/">
+          {/* <Route path="admin/">
             <Route index element={<Queue />} />
             <Route path="queues" element={<Queue />} />
             <Route path="sumarize" element={<Sumarize />} />
@@ -56,7 +56,7 @@ function App() {
               <Route path="members" element={<Members />} />
               <Route path="*" element={<NoPage />} />
             </Route>
-          </Route>
+          </Route> */}
         </Route>
       </Routes>
     </BrowserRouter>

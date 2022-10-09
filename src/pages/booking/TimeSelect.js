@@ -18,10 +18,10 @@ function TimeSelect() {
   return (
     <div className="">
       <div className="flex items-center">
-        {/*NOTE LeftBox Select Date and Time*/}
+        {/* SECTION LeftBox Select Date and Time*/}
         <div id="LeftBox" className="flex items-center basis-2/3 ml-20">
-          {/*NOTE Select Day*/}
-          {/*TODO Calendar*/}
+          {/* SECTION Select Day*/}
+          {/* TODO Calendar*/}
           <div id="dayweek" className="flex flex-row justify-start rounded-md ">
             {dayweek.map((item, idx) => {
               return (
@@ -33,7 +33,7 @@ function TimeSelect() {
                     {item}
                   </p>
 
-                  {/*NOTE Select Time*/}
+                  {/* SECTION Select Time*/}
                   <div id="timeSelecter" className="grid grid-row-7 gap-2">
                     {data.map((item, idx) => {
                       return (

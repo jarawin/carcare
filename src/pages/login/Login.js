@@ -1,4 +1,6 @@
 import { useRef } from 'react';
+import jwt from 'jwt-decode';
+import React from 'react';
 
 // import { auth } from '../../services/firebase';
 
@@ -8,6 +10,60 @@ import { IoLogoAngular } from 'react-icons/io';
 function Login() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
+
+  const handleCallback = (response) => {
+    const responsePayload = jwt(response.credential);
+    const select_by = response.select_by;
+
+    console.log(select_by);
+
+    console.log('ID: ' + responsePayload.sub);
+    console.log('Full Name: ' + responsePayload.name);
+    console.log('Given Name: ' + responsePayload.given_name);
+    console.log('Family Name: ' + responsePayload.family_name);
+    console.log('Image URL: ' + responsePayload.picture);
+    console.log('Email: ' + responsePayload.email);
+  };
+
+  const showGoogleLogin = () => {
+    const google = window.google;
+    google.accounts.id.prompt();
+  };
+
+  React.useEffect(() => {
+    const google = window.google;
+
+    google.accounts.id.initialize({
+      client_id:
+        '277236884335-7vn51t639c39ciovhrnm3r84ge9qtfu6.apps.googleusercontent.com',
+      callback: handleCallback,
+      context: 'signup',
+    });
+
+    if (!google.accounts.id.isDisplayed) {
+      showGoogleLogin();
+    }
+
+    google.accounts.id.prompt();
+
+    google.accounts.id.renderButton(document.getElementById('login'), {
+      // width: 250,
+      theme: 'filled_blue', // filled_blue, filled_black, outline
+      size: 'medium', // small, medium, large
+      type: 'standard', // icon, standard
+      locale: 'en-us', // th-th, en-us
+      type: 'standard', // icon, standard
+      text: 'signin_with', // signin_with, signup_with, continue_with, signin
+      shape: 'rectangular', // rectangular, pill, circle, square
+      logo_alignment: 'center', // left, center
+    });
+
+    // login
+    // google.accounts.id.prompt();
+
+    // logout
+    // google.accounts.id.disableAutoSelect();
+  }, []);
 
   const signIn = (e) => {
     e.preventDefault();
