@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-09T09:20:48.074Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="9NX9hN4JcoJA0pVUKc6C" version="20.3.7" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2022-10-09T09:23:01.416Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="Xpnzuf5TMgj6Zyu1floW" version="20.3.7" type="github" pages="9">
   <diagram id="OdQc7W83qYi903VyMi7l" name="Deployment Diagram">
     <mxGraphModel dx="1278" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -33,7 +33,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="TjMaUTZzYpLtjaPDfiLP" name="Context DFD">
-    <mxGraphModel dx="1278" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2840" dy="1198" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -453,7 +453,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hxJTwfKk-H5Xy9anXFuF" name="DFD Lv0">
-    <mxGraphModel dx="4645" dy="2906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+    <mxGraphModel dx="6495" dy="3687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1603,7 +1603,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="V7rYW-5vF53TiSEiQma9" name="DFD Lv1.10">
-    <mxGraphModel dx="5632" dy="3318" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="7568" dy="4135" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1832,12 +1832,6 @@
         <mxCell id="oFwpY5rmJ-EJv_6LYqGk-45" value="owner" style="whiteSpace=wrap;html=1;align=center;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="-730" y="-540" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="oFwpY5rmJ-EJv_6LYqGk-46" value="10.0" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="-490" y="-658" width="230" height="600" as="geometry" />
-        </mxCell>
-        <mxCell id="oFwpY5rmJ-EJv_6LYqGk-47" value="manage services info" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=20;verticalAlign=middle;resizable=0;rotatable=0;part=1;" vertex="1" parent="oFwpY5rmJ-EJv_6LYqGk-46">
-          <mxGeometry y="30" width="230" height="570" as="geometry" />
-        </mxCell>
         <mxCell id="oFwpY5rmJ-EJv_6LYqGk-48" value="10.1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-1020" y="-410" width="170" height="130" as="geometry" />
         </mxCell>
@@ -1970,7 +1964,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="o94LkK138PRZdSon5Du3" name="DFD Lv1.9">
-    <mxGraphModel dx="5274" dy="3167" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5438" dy="3236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2137,7 +2131,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K3YO-SUiGwuw5WrS8QeN" name="DFD สำรอง">
-    <mxGraphModel dx="3383" dy="2247" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4478" dy="2709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
