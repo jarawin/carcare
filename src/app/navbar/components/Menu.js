@@ -23,6 +23,12 @@ function Menu(props) {
     },
   ];
 
+  React.useEffect(() => {
+    const path = window.location.pathname;
+    const page = path.split('/')[1] == '' ? 'home' : path.split('/')[1];
+    setCurrPage(page);
+  }, []);
+
   return (
     <div
       className={ClassNames(

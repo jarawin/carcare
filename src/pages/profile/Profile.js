@@ -11,9 +11,9 @@ import {
 import customers from '../../apis/customers';
 
 import { AiFillLock, AiFillUnlock } from 'react-icons/ai';
-import verifyLogin from '../../verifydata/verifyLogin';
+import 'flowbite';
 
-function Login() {
+function Profile() {
   const dispatch = useDispatch();
   const isLogin = useSelector(getIsLogin);
   const isCustomer = useSelector(getIsCustomer);
@@ -52,28 +52,41 @@ function Login() {
     }
   };
 
-  const handleLogin = async (e) => {
+  const verifyLogin = () => {
+    if (dataUser.first_name === '') {
+      return "First name can't be empty";
+    }
+    if (dataUser.last_name === '') {
+      return "Last name can't be empty";
+    }
+    if (dataUser.email === '') {
+      return "Email can't be empty";
+    }
+    if (dataUser.tel === '' || dataUser.tel.length < 10) {
+      return "Phone number can't be empty or less than 10 digits";
+    }
+    return '';
+  };
+
+  const handleUpdate = async (e) => {
     e.preventDefault();
 
-    const veri = verifyLogin(dataUser);
-
-    if (veri == '') {
+    if (verifyLogin()) {
       try {
-        const res = await customers.addCustomer(customerInfo);
-        console.log('Add customer');
+        const res = await customers.updateCustomer(customerInfo);
+        console.log('Updated customer');
+        console.log(res);
 
         setError({ isError: false, message: res?.data?.msg });
         dispatch(setIsCustomer(true));
       } catch (error) {
         setError({ isError: true, message: error?.response?.data?.msg });
       }
-    } else {
-      setError({ isError: true, message: veri });
     }
   };
 
   useEffect(() => {
-    const verify_res = verifyLogin(dataUser);
+    const verify_res = verifyLogin();
     if (verify_res === '') {
       setPass(true);
       setError({ isError: false, message: '' });
@@ -81,14 +94,7 @@ function Login() {
       setPass(false);
       setError({ isError: true, message: verify_res });
     }
-    const query = new URLSearchParams(window.location.search);
-    if (!isLogin) {
-      window.location.href = query.get('callback') ?? '/';
-    }
-    if (isCustomer) {
-      window.location.href = query.get('callback') ?? '/';
-    }
-  }, [isLogin, isCustomer, pass, dataUser]);
+  }, [pass, dataUser]);
 
   return (
     <>
@@ -96,10 +102,9 @@ function Login() {
         <div className="max-w-md w-full space-y-8 bg-gray-100 dark:bg-gray-300  p-10 rounded-2xl">
           <div>
             <h2 className="text-center text-2xl lg:text-3xl font-extrabold text-gray-900">
-              ลงชื่อเข้าใช้งานครั้งแรก
+              แก้ไขข้อมูลส่วนตัว
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
-              ยินดีต้อนรับเข้าสู่{' '}
               <a
                 href="#"
                 className="font-medium text-red-600 hover:text-red-500"
@@ -134,7 +139,7 @@ function Login() {
                 <div>
                   <label
                     for="last_name"
-                    class="block mb-2 text-sm font-medium text-gray-900"
+                    class="block mb-2 text-sm font-medium text-gray-900 "
                   >
                     นามสกุล
                   </label>
@@ -213,7 +218,7 @@ function Login() {
                   ' group mt-6 relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 '
                 }
                 disabled={!pass}
-                onClick={handleLogin}
+                onClick={handleUpdate}
               >
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                   {pass ? (
@@ -238,7 +243,7 @@ function Login() {
                     />
                   )}
                 </span>
-                ลงชื่อเข้าใช้งาน
+                อัพเดตข้อมูล
               </button>
             </div>
           </form>
@@ -247,4 +252,4 @@ function Login() {
     </>
   );
 }
-export default Login;
+export default Profile;

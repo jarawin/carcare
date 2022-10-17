@@ -5,7 +5,13 @@ import { FiMenu } from 'react-icons/fi';
 import jwt from 'jwt-decode';
 
 // redux
-import { getIsLogin, handleLogin } from '../../redux/slices/loginSlice';
+import {
+  getIsLogin,
+  handleLogin,
+  setIsCustomer,
+  setFullData,
+} from '../../redux/slices/loginSlice';
+import customers from '../../apis/customers';
 
 // component
 import Menu from './components/Menu';
@@ -30,16 +36,36 @@ function Navbar() {
 
   const [lang, setLang] = useMultiLang();
 
+  const handleCheckIsCustomer = async (customer_id) => {
+    try {
+      const res = await customers.getCustomer(customer_id);
+      dispatch(setIsCustomer(res?.data?.isCustomer));
+      console.log('res.data');
+      console.log(res.data.data);
+
+      if (!res?.data?.isCustomer) {
+        window.location.href = '/login?callback=' + window.location.pathname;
+      } else {
+        dispatch(setFullData(res?.data?.data));
+      }
+    } catch (error) {
+      alert(JSON.stringify('checkIsCustomer error'));
+      console.log(error);
+    }
+  };
+
   const afterLogin = ({ credential, select_by }) => {
     const response = jwt(credential);
     console.log('select_by', select_by);
     console.log('response', response);
 
+    handleCheckIsCustomer(response?.sub);
     dispatch(handleLogin(response));
   };
 
   useEffect(() => {
     const google = window.google;
+    document.body.classList.add('dark:bg-gray-800');
 
     google?.accounts?.id?.initialize({
       client_id:

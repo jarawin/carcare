@@ -8,6 +8,7 @@ import { GiFlamingArrow } from 'react-icons/gi';
 
 function Home() {
   const { t } = useTranslation();
+
   return (
     <div className="">
       <div className=" relative">
@@ -24,6 +25,7 @@ function Home() {
             ให้บริการ 9:00 - 19:00 น. ทุกวัน
             <br />ณ ลานจอดรถชั้นใต้ดิน โลตัสสงขลา
           </p>
+
           <a
             href="/booking"
             class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900"
