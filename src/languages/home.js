@@ -86,7 +86,14 @@ const data = {
     en: 'Garry',
     th: 'สมชาย'
   },
-  
+  type_car: {
+    en: 'Type of car',
+    th: 'ชนิดของรถ'
+  },
+  car_color: {
+    en: 'Car color',
+    th: 'สีของรถ'
+  },
     SEDAN: {
       en: 'Sedan',
       th: 'รถเก๋ง'
@@ -109,9 +116,114 @@ const data = {
     }
     ,
   carLicense: {
-    en: 'License car id',
+    en: 'License plate',
     th: 'ป้ายทะเบียนรถ'
   },
+
+  WHITE: {
+    en: 'White',
+    th: 'ขาว'
+  },
+  BLACK: {
+    en: 'Black',
+    th: 'ดำ'
+  },
+  GRAY: {
+    en: 'Gray',
+    th: 'เทา'
+  },
+  SILVER: {
+    en: 'Silver',
+    th: 'เงิน'
+  },
+  RED: {
+    en: 'Red',
+    th: 'เเดง'
+  },
+  BLUE: {
+    en: 'Blue',
+    th: 'น้ำเงิน'
+  },
+  BROWN: {
+    en: 'Brown',
+    th: 'น้ำตาล'
+  },
+  GREEN: {
+    en: 'Green',
+    th: 'เขียว'
+  },
+  BEIGE: {
+    en: 'Beige',
+    th: 'เบจ'
+  },
+  ORANGE: {
+    en: 'Orange',
+    th: 'ส้ม'
+  },
+  GOLD: {
+    en: 'Gold',
+    th: 'ทอง'
+  },
+  YELLOW: {
+    en: 'Yellow',
+    th: 'เหลือง'
+  },
+  PURPLE: {
+    en: 'Purple',
+    th: 'ม่วง'
+  },
+  OTHERS: {
+    en: 'Other',
+    th: 'อื่นๆ'
+  },
+  licensePlaceholder: {
+    en: 'AB 1234 ',
+    th: 'กข 1234 กรุงเทพ'
+  },
+
+  service_Step: {
+    en: 'Service',
+    th: 'บริการ'
+  },
+  promotion_Step: {
+    en: 'Promotion',
+    th: 'โปรโมชั่น'
+  },
+  verify_promo_Step: {
+    en: 'Verify',
+    th: 'ตรวจสอบ'
+  },
+  text_Step: {
+    en: 'Message',
+    th: 'ข้อความเพิ่มเติม'
+  },
+  text_placeholder: {
+    en: 'Message',
+    th: 'ข้อความเพิ่มเติม'
+  },
+  get_more_service: {
+    en: '+ More service',
+    th: '+ เพิ่มบริการ'
+  },
+  back_button: {
+    en: 'Back',
+    th: 'ย้อนกลับ'
+  },
+  confirm_button: {
+    en: 'Confirm',
+    th: 'ยืนยันการจอง'
+  },
+  next_button: {
+    en: 'Next',
+    th: 'ต่อไป'
+  },
+  bookingOnline: {
+    en: 'Online Booking',
+    th: 'จองคิวออนไลน์'
+  }
+
+  
+
 };
 export const HomeEn = parserObj(data, 'en');
 export const HomeTh = parserObj(data, 'th');

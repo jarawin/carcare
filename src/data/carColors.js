@@ -20,7 +20,7 @@ export default [
     name: 'แดง',
   },
   {
-    color: 'red',
+    color: 'BLUE',
     name: 'น้ำเงิน',
   },
   {

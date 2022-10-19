@@ -16,6 +16,7 @@ import promotionsAPI from '../../../apis/promotions';
 
 import promotions from '../../../data/mock/promotions';
 import services from '../../../data/mock/services';
+import { useTranslation } from 'react-i18next';
 
 const lesstext = (text, max) => {
   if (text.length > max) {
@@ -30,7 +31,8 @@ function ServiceStep() {
   const db = useSelector(selectDataBooking);
   const customerId = useSelector(getCustomerId);
   const [isNotFound, setIsNotFound] = React.useState(false);
-
+  const {t} = useTranslation();
+  
   const findPromotion = () => {
     const pm = promotions.find((p) => p.code === db.code.toUpperCase());
     setIsNotFound(!pm);
@@ -80,7 +82,7 @@ function ServiceStep() {
         for="input-License plate"
         className="block mb-2 text-sm font-medium text-gray-900 red relative"
       >
-        บริการ
+        {t("home.service_Step")}
         <button
           className="flex cursor-pointer hover:bg-gray-200 hover:border-gray-200 p-2 ring-2 border-white ring-white hover:ring-gray-200 rounded-md bg-white border-2 absolute inset-y-0 right-2 items-center  dark:bg-red-600 dark:border-red-600 dark:ring-red-600 dark:hover:bg-red-700 dark:hover:border-red-700 dark:hover:ring-red-700"
           onClick={() => {
@@ -93,7 +95,7 @@ function ServiceStep() {
             );
           }}
         >
-          <span className=" text-red-600 dark:text-white">+ เพิ่มบริการ</span>
+          <span className=" text-red-600 dark:text-white"> {t("home.get_more_service")}</span>
         </button>
       </label>
 
@@ -201,7 +203,7 @@ function ServiceStep() {
           for="input-promotion"
           className="block mb-2 text-sm font-medium text-gray-900 red relative"
         >
-          โปรโมชั่น
+          {t("home.promotion_Step")}
           {isNotFound ? (
             <div className="flex absolute inset-y-0 right-3 items-center pl-3 pointer-events-none">
               <AiOutlineClose className="h-5 w-5 absolute  text-red-600" />
@@ -232,7 +234,7 @@ function ServiceStep() {
                   dispatch(setCode(''));
                 }}
               >
-                ยกเลิก
+                ยกเลิก {t("home.promotion_Step")}
               </button>
               <div
                 type="search"
@@ -259,7 +261,7 @@ function ServiceStep() {
                 className="text-white absolute right-2.5 bottom-2.5 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
                 onClick={findPromotion}
               >
-                ตรวจสอบ
+                {t("home.verify_promo_Step")}
               </button>
             </>
           )}
@@ -270,7 +272,7 @@ function ServiceStep() {
         for="comment"
         className="block mb-2 text-sm font-medium text-gray-900 "
       >
-        ข้อความเพิ่มเติม
+       {t("home.text_Step")}
       </label>
       <textarea
         id="comment"
@@ -278,7 +280,7 @@ function ServiceStep() {
         value={db.comment}
         onChange={(e) => dispatch(setComment(e.target.value))}
         className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500 required"
-        placeholder="ข้อความเพิ่มเติม "
+        placeholder={t("home.text_placeholder")} 
       ></textarea>
     </>
   );

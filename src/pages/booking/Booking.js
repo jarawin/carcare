@@ -16,11 +16,13 @@ import CarStep from './components/CarStep';
 import ServiceStep from './components/ServiceStep';
 
 import verifyBooking from '../../verifydata/verifyBooking';
+import { useTranslation } from 'react-i18next';
 
 function Booking() {
   const dispatch = useDispatch();
   const db = useSelector(selectDataBooking);
   const forBooking = useSelector(getForBooking);
+  const {t} = useTranslation();
 
   const [step, setStep] = React.useState(
     parseInt(localStorage.getItem('step') || '1')
@@ -70,7 +72,7 @@ function Booking() {
       <div className="col-span-2 mb-10  max-w-md w-full space-y-8 bg-gray-100 dark:bg-gray-300  p-10 rounded-2xl mt-10 mx-auto">
         <div>
           <h2 className="text-center text-2xl lg:text-3xl font-extrabold text-gray-900">
-            จองคิวออนไลน์
+            {t("home.bookingOnline")}
             <br />
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
@@ -165,7 +167,7 @@ function Booking() {
                 ' group mt-6 relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 '
               }
             >
-              ย้อนกลับ
+              {t("home.back_button")}
             </button>
             <button
               type="submit"
@@ -185,7 +187,7 @@ function Booking() {
                 ' group mt-6 relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 '
               }
             >
-              {step < 3 ? 'ต่อไป' : 'ยืนยันการจอง'}
+              {step < 3 ? t("home.next_button") : t("home.confirm_button")}
             </button>
           </div>
         </div>
