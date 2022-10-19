@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import dateAvailable from '../../data/mock/dateAvailable';
 import timeAvailable from '../../data/mock/timeAvailable';
 import carColors from '../../data/carColors';
 import carTypes from '../../data/carTypes';
@@ -16,6 +15,20 @@ function getTimeStamp(t) {
   return d.getTime() / 1000;
 }
 
+const getDateAvailable = (amount, startDate = new Date()) => {
+  const dateAvailable = [];
+  for (let i = 0; i < amount; i++) {
+    dateAvailable.push({
+      name: startDate.toLocaleDateString('th-TH', { weekday: 'long' }),
+      date: startDate.toLocaleDateString('th-TH'),
+    });
+    startDate.setDate(startDate.getDate() + 1);
+  }
+  return dateAvailable;
+};
+
+const dateAvailable = getDateAvailable(1);
+
 const initialState = {
   type_car: localStorage.getItem('booking.type_car') || carTypes[0].type_of_car,
   license_car: localStorage.getItem('booking.license_car') || '',
@@ -27,12 +40,12 @@ const initialState = {
   comment: localStorage.getItem('booking.comment') || '',
   booking_time:
     localStorage.getItem('booking.booking_time') ||
-    getTimeStamp(dateAvailable[0].date + ' ' + timeAvailable[0]),
+    getTimeStamp(dateAvailable.date + ' ' + timeAvailable[0]),
   included: JSON.parse(localStorage.getItem('booking.included')) || [
     { services_id: services[0].service_id },
   ],
   promotion: localStorage.getItem('booking.promotion') || '',
-  date: localStorage.getItem('booking.date') || dateAvailable[0].date,
+  date: localStorage.getItem('booking.date') || dateAvailable.date,
   time: localStorage.getItem('booking.time') || timeAvailable[0],
 };
 
@@ -93,30 +106,6 @@ export const bookingSlice = createSlice({
       localStorage.setItem('booking.included', JSON.stringify(action.payload));
       state.included = action.payload;
     },
-    removeIncluded: (state, action) => {
-      var included = [];
-      state.included.forEach((item, i) => {
-        if (i != action.payload) {
-          included.push(item);
-        }
-      });
-      console.log(JSON.stringify(included));
-
-      localStorage.setItem('booking.included', JSON.stringify(included));
-      state.included = included;
-    },
-    addIncluded: (state, action) => {
-      let included = state.included;
-      included.push({ services_id: action.payload });
-      localStorage.setItem('booking.included', JSON.stringify(included));
-      state.included = included;
-    },
-    updateIncluded: (state, action) => {
-      let included = state.included;
-      included[action.payload.index].services_id = action.payload.services_id;
-      localStorage.setItem('booking.included', JSON.stringify(included));
-      state.included = included;
-    },
   },
 });
 
@@ -134,9 +123,6 @@ export const {
   setPromotion,
   setDate,
   setTime,
-  removeIncluded,
-  addIncluded,
-  updateIncluded,
 } = bookingSlice.actions;
 
 export const selectDataBooking = (state) => {

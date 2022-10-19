@@ -13,6 +13,13 @@ class Promotions extends Base {
     return this.axios.get(`/promotion?promotion_id=${promotionId}`);
   }
 
+  getCanUsePromotions(customerId, code, type_car, services) {
+    return this.axios.post(
+      `/promotion/canuse?customer_id=${customerId}&code=${code}&type_car=${type_car}`,
+      services
+    );
+  }
+
   addPromotion(promotion) {
     return this.axios.post('/promotion', promotion);
   }

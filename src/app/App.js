@@ -11,6 +11,7 @@ const Services = React.lazy(() => import('../pages/services/Services'));
 const NoPage = React.lazy(() => import('../pages/nopage/NoPage'));
 const Form = React.lazy(() => import('../pages/Form/Form'));
 const Profile = React.lazy(() => import('../pages/profile/Profile'));
+const Queue = React.lazy(() => import('../pages/queue/Queue'));
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="profile" element={<Profile />} />
           <Route path="login" element={<Login />} />
+          <Route path="queue" element={<Queue />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

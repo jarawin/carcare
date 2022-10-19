@@ -12,7 +12,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { HiPhone, HiUser } from 'react-icons/hi';
 import { AiFillCar } from 'react-icons/ai';
 
-import dateAvailable from '../../../data/mock/dateAvailable';
+// import dateAvailable from '../../../data/mock/dateAvailable';
 import timeAvailable from '../../../data/mock/timeAvailable';
 
 function getTimeStamp(t) {
@@ -23,6 +23,18 @@ function getTimeStamp(t) {
   var d = new Date(date[2], date[1] - 1, date[0], time[0], time[1], time[2]);
   return d.getTime() / 1000;
 }
+
+const getDateAvailable = (amount, startDate = new Date()) => {
+  const dateAvailable = [];
+  for (let i = 0; i < amount; i++) {
+    dateAvailable.push({
+      name: startDate.toLocaleDateString('th-TH', { weekday: 'long' }),
+      date: startDate.toLocaleDateString('th-TH'),
+    });
+    startDate.setDate(startDate.getDate() + 1);
+  }
+  return dateAvailable;
+};
 
 function UserStep() {
   const dispatch = useDispatch();
@@ -94,7 +106,7 @@ function UserStep() {
           onChange={(e) => dispatch(setDate(e.target.value))}
           value={db.date}
         >
-          {dateAvailable.map((date) => (
+          {getDateAvailable(7).map((date) => (
             <option value={date.date} selected>
               {date.name + ' ' + date.date}
             </option>

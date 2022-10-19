@@ -1,8 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  is_login: JSON.parse(localStorage.getItem('is_login')) || false,
-  isCustomer: JSON.parse(localStorage.getItem('isCustomer')) || false,
+  is_login: JSON.parse(localStorage.getItem('is_login') == 'true' || 'false'),
+  isCustomer: JSON.parse(
+    localStorage.getItem('isCustomer') == 'true' || 'false'
+  ),
   first_name: localStorage.getItem('first_name') || '',
   last_name: localStorage.getItem('last_name') || '',
   image_url: localStorage.getItem('image_url') || '',
@@ -134,6 +136,7 @@ export const getStateLogin = (state) => state.login.is_login;
 export const getIsLogin = (state) => state.login.is_login;
 export const getSelectBy = (state) => state.login.select_by;
 export const getIsCustomer = (state) => state.login.isCustomer;
+export const getCustomerId = (state) => state.login.social_id;
 export const getForBooking = (state) => {
   return {
     first_name: state.login.first_name,

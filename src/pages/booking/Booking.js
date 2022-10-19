@@ -22,7 +22,9 @@ function Booking() {
   const db = useSelector(selectDataBooking);
   const forBooking = useSelector(getForBooking);
 
-  const [step, setStep] = React.useState(1);
+  const [step, setStep] = React.useState(
+    parseInt(localStorage.getItem('step') || '1')
+  );
   const [tap, setTap] = React.useState(<UserStep />);
   const [error, setError] = React.useState({
     isError: false,
@@ -64,7 +66,7 @@ function Booking() {
   }, [step, db]);
 
   return (
-    <div className="  items-center justify-center px-4 sm:px-6 lg:px-8 grid grid-cols-1 ld:grid-cols-5">
+    <div className=" items-center justify-center px-4 sm:px-6 lg:px-8 grid grid-cols-1 ld:grid-cols-5">
       <div className="col-span-2 mb-10  max-w-md w-full space-y-8 bg-gray-100 dark:bg-gray-300  p-10 rounded-2xl mt-10 mx-auto">
         <div>
           <h2 className="text-center text-2xl lg:text-3xl font-extrabold text-gray-900">
@@ -152,7 +154,10 @@ function Booking() {
             <button
               type="submit"
               disabled={step <= 1}
-              onClick={() => setStep(step - 1)}
+              onClick={() => {
+                setStep(step - 1);
+                localStorage.setItem('step', step - 1);
+              }}
               className={
                 (step > 1
                   ? 'bg-red-600 hover:bg-red-700 focus:ring-red-500 '
@@ -164,16 +169,17 @@ function Booking() {
             </button>
             <button
               type="submit"
-              disabled={step >= 4}
+              disabled={step >= 4 || error.isError}
               onClick={() => {
                 if (step === 3) {
                   alert('ยืนยันการจอง');
                 } else {
                   setStep(step + 1);
+                  localStorage.setItem('step', step + 1);
                 }
               }}
               className={
-                (step < 4 && !error.isError
+                (!error.isError && step < 4
                   ? 'bg-red-600 hover:bg-red-700 focus:ring-red-500 '
                   : 'disabled bg-gray-400 cursor-not-allowed') +
                 ' group mt-6 relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 '

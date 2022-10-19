@@ -36,7 +36,7 @@ function CarStep() {
           value={db.type_car}
         >
           {carTypes.map((i) => (
-            <option value={i.type}>{i.name}</option>
+            <option value={i.type_of_car}>{i.name}</option>
           ))}
         </select>
       </div>

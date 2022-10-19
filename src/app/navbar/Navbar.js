@@ -12,6 +12,8 @@ import {
   setFullData,
 } from '../../redux/slices/loginSlice';
 import customers from '../../apis/customers';
+import { addOrder } from '../../redux/slices/orderSlice';
+import mockOrders from '../../data/mock/orders';
 
 // component
 import Menu from './components/Menu';
@@ -94,7 +96,11 @@ function Navbar() {
       <nav className=" sticky  bg-red-800 px-2 sm:px-4 py-2.5   w-full z-50 top-0 left-0 border-b border-gray-600  font-itim">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           {/* NOTE LOGO */}
-          <a href="/" className="flex items-center">
+          <a
+            href="#"
+            className="flex items-center"
+            onClick={(e) => dispatch(addOrder(mockOrders))}
+          >
             <span className="mr-1 ml-1 font-bold text-2xl self-center text-red-700 whitespace-nowrap dark:text-white">
               <img src={'/logo/7.svg'} className="h-12 lg:h-14 mr-1"></img>
             </span>

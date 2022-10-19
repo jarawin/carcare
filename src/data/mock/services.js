@@ -16,7 +16,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '490' },
       { type_of_car: 'SUV', price: '490' },
-      { type_of_car: 'TRUCK', price: '90' },
+      { type_of_car: 'PICKUP', price: '490' },
       { type_of_car: 'SEDAN', price: '490' },
       { type_of_car: 'VAN', price: '590' },
     ],
@@ -37,11 +37,11 @@ export default [
       { name: 'เคลือบสีรถ แว๊ก3M', period_time: '30' },
     ],
     price_per_typeS: [
-      { type_of_car: 'MC', price: '' },
-      { type_of_car: 'SUV', price: '' },
-      { type_of_car: 'TRUCK', price: '' },
-      { type_of_car: 'SEDAN', price: '' },
-      { type_of_car: 'VAN', price: '' },
+      { type_of_car: 'MC', price: '400' },
+      { type_of_car: 'SUV', price: '400' },
+      { type_of_car: 'PICKUP', price: '400' },
+      { type_of_car: 'SEDAN', price: '400' },
+      { type_of_car: 'VAN', price: '400' },
     ],
   },
 
@@ -64,7 +64,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '690' },
       { type_of_car: 'SUV', price: '690' },
-      { type_of_car: 'TRUCK', price: '790' },
+      { type_of_car: 'PICKUP', price: '790' },
       { type_of_car: 'SEDAN', price: '690' },
       { type_of_car: 'VAN', price: '790' },
     ],
@@ -90,7 +90,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '990' },
       { type_of_car: 'SUV', price: '990' },
-      { type_of_car: 'TRUCK', price: '1090' },
+      { type_of_car: 'PICKUP', price: '1090' },
       { type_of_car: 'SEDAN', price: '990' },
       { type_of_car: 'VAN', price: '1090' },
     ],
@@ -114,7 +114,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '1200' },
       { type_of_car: 'SUV', price: '1200' },
-      { type_of_car: 'TRUCK', price: '1300' },
+      { type_of_car: 'PICKUP', price: '1300' },
       { type_of_car: 'SEDAN', price: '1200' },
       { type_of_car: 'VAN', price: '1300' },
     ],
@@ -137,7 +137,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '1500' },
       { type_of_car: 'SUV', price: '1500' },
-      { type_of_car: 'TRUCK', price: '1800' },
+      { type_of_car: 'PICKUP', price: '1800' },
       { type_of_car: 'SEDAN', price: '1500' },
       { type_of_car: 'VAN', price: '1800' },
     ],
@@ -162,7 +162,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '2500' },
       { type_of_car: 'SUV', price: '2500' },
-      { type_of_car: 'TRUCK', price: '2900' },
+      { type_of_car: 'PICKUP', price: '2900' },
       { type_of_car: 'SEDAN', price: '2500' },
       { type_of_car: 'VAN', price: '2900' },
     ],
@@ -184,7 +184,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '1500' },
       { type_of_car: 'SUV', price: '2000' },
-      { type_of_car: 'TRUCK', price: '2900' },
+      { type_of_car: 'PICKUP', price: '2900' },
       { type_of_car: 'SEDAN', price: '2000' },
       { type_of_car: 'VAN', price: '2900' },
     ],
@@ -200,7 +200,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '2500' },
       { type_of_car: 'SUV', price: '2500' },
-      { type_of_car: 'TRUCK', price: '2900' },
+      { type_of_car: 'PICKUP', price: '2900' },
       { type_of_car: 'SEDAN', price: '2500' },
       { type_of_car: 'VAN', price: '2900' },
     ],
@@ -216,7 +216,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '2200' },
       { type_of_car: 'SUV', price: '2200' },
-      { type_of_car: 'TRUCK', price: '2900' },
+      { type_of_car: 'PICKUP', price: '2900' },
       { type_of_car: 'SEDAN', price: '2200' },
       { type_of_car: 'VAN', price: '2900' },
     ],
@@ -232,7 +232,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '300' },
       { type_of_car: 'SUV', price: '300' },
-      { type_of_car: 'TRUCK', price: '300' },
+      { type_of_car: 'PICKUP', price: '300' },
       { type_of_car: 'SEDAN', price: '300' },
       { type_of_car: 'VAN', price: '300' },
     ],
@@ -248,7 +248,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '100' },
       { type_of_car: 'SUV', price: '100' },
-      { type_of_car: 'TRUCK', price: '200' },
+      { type_of_car: 'PICKUP', price: '200' },
       { type_of_car: 'SEDAN', price: '100' },
       { type_of_car: 'VAN', price: '200' },
     ],
@@ -264,7 +264,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '150' },
       { type_of_car: 'SUV', price: '150' },
-      { type_of_car: 'TRUCK', price: '250' },
+      { type_of_car: 'PICKUP', price: '250' },
       { type_of_car: 'SEDAN', price: '150' },
       { type_of_car: 'VAN', price: '250' },
     ],
@@ -280,7 +280,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '200' },
       { type_of_car: 'SUV', price: '200' },
-      { type_of_car: 'TRUCK', price: '500' },
+      { type_of_car: 'PICKUP', price: '500' },
       { type_of_car: 'SEDAN', price: '200' },
       { type_of_car: 'VAN', price: '500' },
     ],
@@ -296,7 +296,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '600' },
       { type_of_car: 'SUV', price: '600' },
-      { type_of_car: 'TRUCK', price: '600' },
+      { type_of_car: 'PICKUP', price: '600' },
       { type_of_car: 'SEDAN', price: '600' },
       { type_of_car: 'VAN', price: '600' },
     ],
@@ -312,7 +312,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '250' },
       { type_of_car: 'SUV', price: '250' },
-      { type_of_car: 'TRUCK', price: '250' },
+      { type_of_car: 'PICKUP', price: '250' },
       { type_of_car: 'SEDAN', price: '250' },
       { type_of_car: 'VAN', price: '250' },
     ],
@@ -328,7 +328,7 @@ export default [
     price_per_typeS: [
       { type_of_car: 'MC', price: '250' },
       { type_of_car: 'SUV', price: '250' },
-      { type_of_car: 'TRUCK', price: '250' },
+      { type_of_car: 'PICKUP', price: '250' },
       { type_of_car: 'SEDAN', price: '250' },
       { type_of_car: 'VAN', price: '250' },
     ],

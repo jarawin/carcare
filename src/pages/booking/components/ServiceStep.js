@@ -5,14 +5,14 @@ import {
   setIncluded,
   setPromotion,
   selectDataBooking,
-  removeIncluded,
-  addIncluded,
-  updateIncluded,
 } from '../../../redux/slices/bookingSlice';
+import { getCustomerId } from '../../../redux/slices/loginSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { GiPriceTag } from 'react-icons/gi';
 import { AiOutlineClose, AiOutlineCheck, AiFillCar } from 'react-icons/ai';
+
+import promotionsAPI from '../../../apis/promotions';
 
 import promotions from '../../../data/mock/promotions';
 import services from '../../../data/mock/services';
@@ -28,12 +28,36 @@ const lesstext = (text, max) => {
 function ServiceStep() {
   const dispatch = useDispatch();
   const db = useSelector(selectDataBooking);
+  const customerId = useSelector(getCustomerId);
   const [isNotFound, setIsNotFound] = React.useState(false);
 
   const findPromotion = () => {
     const pm = promotions.find((p) => p.code === db.code.toUpperCase());
     setIsNotFound(!pm);
     dispatch(setPromotion(pm.name));
+  };
+
+  const calPrice = (carType, service_id) => {
+    const service = services.find((s) => s.service_id === service_id);
+    const price = service.price_per_typeS.find(
+      (p) => p.type_of_car === carType
+    );
+    return price.price;
+  };
+
+  const canUsePromotion = async () => {
+    try {
+      const res = await promotionsAPI.getCanUsePromotions(
+        customerId,
+        db.code,
+        db.type_car,
+        { services: db.included }
+      );
+      alert(JSON.stringify({ services: db.included }));
+      alert(JSON.stringify(res.data));
+    } catch (error) {
+      alert(error.response.data);
+    }
   };
 
   React.useEffect(() => {
@@ -45,6 +69,13 @@ function ServiceStep() {
   return (
     <>
       {/* NOTE Service */}
+      <button
+        className="btn btn-primary btn-block mb-3"
+        onClick={canUsePromotion}
+      >
+        {' '}
+        TEST API{' '}
+      </button>
       <label
         for="input-License plate"
         className="block mb-2 text-sm font-medium text-gray-900 red relative"
@@ -53,7 +84,13 @@ function ServiceStep() {
         <button
           className="flex cursor-pointer hover:bg-gray-200 hover:border-gray-200 p-2 ring-2 border-white ring-white hover:ring-gray-200 rounded-md bg-white border-2 absolute inset-y-0 right-2 items-center  dark:bg-red-600 dark:border-red-600 dark:ring-red-600 dark:hover:bg-red-700 dark:hover:border-red-700 dark:hover:ring-red-700"
           onClick={() => {
-            dispatch(addIncluded({ service_id: services[0].service_id }));
+            // add new service
+            dispatch(
+              setIncluded([
+                ...db.included,
+                { service_id: services[0].service_id },
+              ])
+            );
           }}
         >
           <span className=" text-red-600 dark:text-white">+ เพิ่มบริการ</span>
@@ -67,72 +104,95 @@ function ServiceStep() {
           <AiFillCar className="h-5 w-5 absolute dark:text-white" />
         </div>
         <select
-          id="countries"
           className=" pl-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
           onChange={(e) => {
             {
+              // change first service
               dispatch(
-                setIncluded([...db.included, { service_id: e.target.value }])
+                setIncluded([
+                  { service_id: e.target.value },
+                  ...db.included.slice(1),
+                ])
               );
             }
           }}
-          defaultValue={{ service_id: db.included[0].service_id }}
+          defaultValue={db.included[0].service_id}
         >
-          {services.map((service) => (
-            <option value={service.service_id} selected>
-              {service.name + ' ' + service.price_per_typeS[0].price + ' บาท'}
-            </option>
-          ))}
+          {services.map((service) => {
+            const p = calPrice(db.type_car, service.service_id);
+
+            if (p) {
+              return (
+                <option
+                  value={service.service_id}
+                  defaultValue={db.included[0].service_id}
+                  selected
+                >
+                  {service.name + ' ' + p + ' บาท'}
+                </option>
+              );
+            }
+          })}
         </select>
       </div>
 
       {/* NOTE Service Add */}
       {db.included.length > 1
-        ? db.included.map((service, idx) => {
-            if (idx > 0) {
-              return (
-                <div
-                  className={
-                    (db.included.length - 1 <= idx ? 'mb-6' : 'mb-2') + ' flex '
-                  }
-                >
-                  <div className="relative flex-auto">
-                    <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                      <AiFillCar className="h-5 w-5 absolute dark:text-white" />
-                    </div>
-                    <select
-                      className=" pl-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
-                      onChange={(e) => {
-                        {
-                          dispatch(
-                            updateIncluded({
-                              idx: idx,
-                              service_id: e.target.value,
-                            })
-                          );
-                        }
-                      }}
-                      defaultValue={db.included[idx]}
-                    >
-                      {services.map((service) => (
-                        <option value={service.service_id}>
-                          {service.name}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                  <button
-                    className="flex cursor-pointer border border-gray-300 hover:bg-gray-200  p-2 rounded-r-lg bg-white  right-3 items-center  dark:bg-gray-900  dark:hover:bg-gray-800  "
-                    onClick={() => dispatch(removeIncluded(idx))}
-                  >
-                    <span className="text-sm px-2  dark:text-white">ลบ</span>
-                  </button>
+        ? db.included.slice(1).map((serviceIncluded, idx) => (
+            <div
+              key={idx}
+              className={
+                (db.included.length - 2 <= idx ? 'mb-6' : 'mb-2') + ' flex '
+              }
+            >
+              <div className="relative flex-auto">
+                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                  <AiFillCar className="h-5 w-5 absolute dark:text-white" />
                 </div>
-              );
-            } else {
-              return null;
-            }
-          })
+                <select
+                  className=" pl-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
+                  onChange={(e) => {
+                    {
+                      // change service idx
+                      dispatch(
+                        setIncluded([
+                          ...db.included.slice(0, idx + 1),
+                          { service_id: e.target.value },
+                          ...db.included.slice(idx + 2),
+                        ])
+                      );
+                    }
+                  }}
+                  value={db.included[idx + 1].service_id}
+                >
+                  {services.map((service, sIdx) => {
+                    const p = calPrice(db.type_car, service.service_id);
+
+                    if (p) {
+                      return (
+                        <option key={sIdx} value={service.service_id}>
+                          {service.name + ' ' + p + ' บาท'}
+                        </option>
+                      );
+                    }
+                  })}
+                </select>
+              </div>
+              <button
+                className="flex cursor-pointer border border-gray-300 hover:bg-gray-200  p-2 rounded-r-lg bg-white  right-3 items-center  dark:bg-gray-900  dark:hover:bg-gray-800  "
+                onClick={() => {
+                  dispatch(
+                    setIncluded([
+                      ...db.included.slice(0, idx + 1),
+                      ...db.included.slice(idx + 2),
+                    ])
+                  );
+                }}
+              >
+                <span className="text-sm px-2  dark:text-white">ลบ</span>
+              </button>
+            </div>
+          ))
         : null}
 
       {/*NOTE Enter promotion */}
