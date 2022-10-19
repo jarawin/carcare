@@ -15,6 +15,7 @@ import { useTranslation } from 'react-i18next';
 
 // import dateAvailable from '../../../data/mock/dateAvailable';
 import timeAvailable from '../../../data/mock/timeAvailable';
+import useLanguage from '../../../hooks/useMultiLang';
 
 function getTimeStamp(t) {
   var parts = t.trim().split(' ');
@@ -25,11 +26,13 @@ function getTimeStamp(t) {
   return d.getTime() / 1000;
 }
 
-const getDateAvailable = (amount, startDate = new Date()) => {
+const getDateAvailable = (amount, lang, startDate = new Date()) => {
   const dateAvailable = [];
   for (let i = 0; i < amount; i++) {
     dateAvailable.push({
-      name: startDate.toLocaleDateString('th-TH', { weekday: 'long' }),
+      name: startDate.toLocaleDateString(lang == 'th' ? 'th-TH' : 'en-EN', {
+        weekday: 'long',
+      }),
       date: startDate.toLocaleDateString('th-TH'),
     });
     startDate.setDate(startDate.getDate() + 1);
@@ -41,6 +44,7 @@ function UserStep() {
   const {t} = useTranslation();
   const dispatch = useDispatch();
   const db = useSelector(selectDataBooking);
+  const [lang, setLang] = useLanguage();
 
   React.useEffect(() => {
     const t = getTimeStamp(db.date + ' ' + db.time);
@@ -110,7 +114,7 @@ function UserStep() {
           onChange={(e) => dispatch(setDate(e.target.value))}
           value={db.date}
         >
-          {getDateAvailable(7).map((date) => (
+          {getDateAvailable(7, lang).map((date) => (
             <option value={date.date} selected>
               {date.name + ' ' + date.date}
             </option>
