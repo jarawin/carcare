@@ -70,7 +70,7 @@ function MultiLang(props) {
           ' relative z-40 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700'
         )}
       >
-        <ul className="absolute bg-gray-200 right-0 bottom-5 rounded-lg">
+        <ul className="absolute bg-gray-200 divide-y divide-gray-100 shadow dark:bg-gray-700 right-0 bottom-5 rounded-lg">
           {languages.map((language, index) => (
             <li key={index}>
               <a
