@@ -1,123 +1,244 @@
-import { useRef } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  getIsLogin,
+  getDataUser,
+  setIsCustomer,
+  updateProfile,
+  getIsCustomer,
+  getCustomerInfo,
+} from '../../redux/slices/loginSlice';
+import customers from '../../apis/customers';
 
-// import { auth } from '../../services/firebase';
-
-import { LockClosedIcon } from '@heroicons/react/solid';
-import { IoLogoAngular } from 'react-icons/io';
+import { AiFillLock, AiFillUnlock } from 'react-icons/ai';
+import verifyLogin from '../../verifydata/verifyLogin';
 
 function Login() {
-  const emailRef = useRef(null);
-  const passwordRef = useRef(null);
+  const dispatch = useDispatch();
+  const isLogin = useSelector(getIsLogin);
+  const isCustomer = useSelector(getIsCustomer);
+  const dataUser = useSelector(getDataUser);
+  const customerInfo = useSelector(getCustomerInfo);
+  const [error, setError] = useState({ isError: false, message: '' });
+  const [pass, setPass] = useState(false);
 
-  const signIn = (e) => {
-    e.preventDefault();
-    // auth
-    //   .createUserWithEmailAndPassword(
-    //     emailRef.current.value,
-    //     passwordRef.current.value
-    //   )
-    //   .then((user) => {
-    //     console.log(user);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+  const handleUpdateProfile = (label, value) => {
+    var temp = {
+      first_name: dataUser.first_name,
+      last_name: dataUser.last_name,
+      email: dataUser.email,
+      tel: dataUser.tel,
+    };
+
+    switch (label) {
+      case 'first_name':
+        temp.first_name = value;
+        dispatch(updateProfile(temp));
+        break;
+      case 'last_name':
+        temp.last_name = value;
+        dispatch(updateProfile(temp));
+        break;
+      case 'email':
+        temp.email = value;
+        dispatch(updateProfile(temp));
+        break;
+      case 'tel':
+        temp.tel = value;
+        dispatch(updateProfile(temp));
+        break;
+      default:
+        break;
+    }
   };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    const veri = verifyLogin(dataUser);
+
+    if (veri == '') {
+      try {
+        const res = await customers.addCustomer(customerInfo);
+        console.log('Add customer');
+
+        setError({ isError: false, message: res?.data?.msg });
+        dispatch(setIsCustomer(true));
+      } catch (error) {
+        setError({ isError: true, message: error?.response?.data?.msg });
+      }
+    } else {
+      setError({ isError: true, message: veri });
+    }
+  };
+
+  useEffect(() => {
+    const verify_res = verifyLogin(dataUser);
+    if (verify_res === '') {
+      setPass(true);
+      setError({ isError: false, message: '' });
+    } else {
+      setPass(false);
+      setError({ isError: true, message: verify_res });
+    }
+    const query = new URLSearchParams(window.location.search);
+    if (!isLogin) {
+      window.location.href = query.get('callback') ?? '/';
+    }
+    if (isCustomer) {
+      window.location.href = query.get('callback') ?? '/';
+    }
+  }, [isLogin, isCustomer, pass, dataUser]);
 
   return (
     <>
-      <div className="min-h-full flex items-center justify-center h-screen px-4 sm:px-6 lg:px-8">
-        <div className="max-w-md w-full space-y-8">
+      <div className="min-h-full flex items-center justify-center h-screen px-4 sm:px-6 lg:px-8 ">
+        <div className="max-w-md w-full space-y-8 bg-gray-100 dark:bg-gray-300  p-10 rounded-2xl">
           <div>
-            <IoLogoAngular className="mx-auto h-12 w-auto" color="#FF4444" />
-
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-              Sign in to your account
+            <h2 className="text-center text-2xl lg:text-3xl font-extrabold text-gray-900">
+              ลงชื่อเข้าใช้งานครั้งแรก
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
-              Or{' '}
+              ยินดีต้อนรับเข้าสู่{' '}
               <a
                 href="#"
                 className="font-medium text-red-600 hover:text-red-500"
               >
-                start your 14-day free trial
+                KSR Carcare
               </a>
             </p>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
-            <input type="hidden" name="remember" defaultValue="true" />
-            <div className="rounded-md shadow-sm -space-y-px">
-              <div>
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
+
+          <form className="mt-8">
+            <div className="space-y-6">
+              <div class="grid gap-6  md:grid-cols-2">
+                <div>
+                  <label
+                    for="first_name"
+                    class="block mb-2 text-sm font-medium text-gray-900 "
+                  >
+                    ชื่อจริง
+                  </label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    value={dataUser.first_name ?? ''}
+                    onChange={(e) => {
+                      handleUpdateProfile('first_name', e.target.value);
+                    }}
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
+                    placeholder="สมชาย"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="last_name"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                  >
+                    นามสกุล
+                  </label>
+                  <input
+                    type="text"
+                    id="last_name"
+                    value={dataUser.last_name ?? ''}
+                    onChange={(e) => {
+                      handleUpdateProfile('last_name', e.target.value);
+                    }}
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
+                    placeholder="ทองบุญ"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="">
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-gray-900 "
+                >
+                  อีเมล
                 </label>
                 <input
-                  ref={emailRef}
-                  id="email-address"
-                  name="email"
                   type="email"
-                  autoComplete="email"
+                  id="email"
+                  value={dataUser.email ?? ''}
+                  onChange={(e) => {
+                    handleUpdateProfile('email', e.target.value);
+                  }}
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
+                  placeholder="user@carcare.com"
                   required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm"
-                  placeholder="Email address"
                 />
               </div>
-              <div>
-                <label htmlFor="password" className="sr-only">
-                  Password
+
+              <div class="">
+                <label
+                  for="phone"
+                  class="block mb-2 text-sm font-medium text-gray-900 "
+                >
+                  เบอร์โทรศัพท์
                 </label>
                 <input
-                  ref={passwordRef}
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
+                  type="tel"
+                  id="phone"
+                  value={dataUser.tel ?? ''}
+                  onChange={(e) => {
+                    handleUpdateProfile('tel', e.target.value);
+                  }}
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
+                  placeholder="0987654321"
+                  pattern="[0]{1}[6,8,9]{1}[0-9]{8}"
                   required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm"
-                  placeholder="Password"
                 />
               </div>
             </div>
 
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <input
-                  id="remember-me"
-                  name="remember-me"
-                  type="checkbox"
-                  className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
-                />
-                <label
-                  htmlFor="remember-me"
-                  className="ml-2 block text-sm text-gray-900"
-                >
-                  Remember me
-                </label>
-              </div>
-
-              <div className="text-sm">
-                <a
-                  href="#"
-                  className="font-medium text-red-600 hover:text-red-500"
-                >
-                  Forgot your password?
-                </a>
-              </div>
+            <div
+              className={
+                (error.isError ? ' text-red-600' : 'text-green-600') +
+                ' mt-2  text-sm text-start'
+              }
+            >
+              {error.message}
             </div>
 
             <div>
               <button
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-                onClick={signIn}
+                className={
+                  (pass
+                    ? 'bg-red-600 hover:bg-red-700 focus:ring-red-500 '
+                    : 'disabled bg-gray-400 cursor-not-allowed') +
+                  ' group mt-6 relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 '
+                }
+                disabled={!pass}
+                onClick={handleLogin}
               >
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                  <LockClosedIcon
-                    className="h-5 w-5 text-red-500 group-hover:text-red-400"
-                    aria-hidden="true"
-                  />
+                  {pass ? (
+                    <AiFillUnlock
+                      className={
+                        (pass
+                          ? 'text-red-500 group-hover:text-red-400'
+                          : 'text-gray-500 group-hover:text-gray-600') +
+                        ' h-5 w-5 '
+                      }
+                      aria-hidden="true"
+                    />
+                  ) : (
+                    <AiFillLock
+                      className={
+                        (pass
+                          ? 'text-red-500 group-hover:text-red-400'
+                          : 'text-gray-500 group-hover:text-gray-600') +
+                        ' h-5 w-5 '
+                      }
+                      aria-hidden="true"
+                    />
+                  )}
                 </span>
-                Sign in
+                ลงชื่อเข้าใช้งาน
               </button>
             </div>
           </form>

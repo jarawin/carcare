@@ -7,8 +7,8 @@ import { store } from './redux/store';
 import reportWebVitals from './utils/reportWebVitals';
 
 import App from './app/App';
-import './index.css';
 import './services/i18n';
+import './index.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
