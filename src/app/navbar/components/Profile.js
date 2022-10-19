@@ -7,11 +7,14 @@ import { getDataUser, logout } from '../../../redux/slices/loginSlice';
 
 // utils
 import classNames from '../../../utils/classNames';
+import { useTranslation } from 'react-i18next';
 
 function Profile() {
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
   const dataUser = useSelector(getDataUser);
+  const {t} = useTranslation();
+
   // const isLogin = useSelector(getIsLogin);
 
   return (
@@ -52,7 +55,7 @@ function Profile() {
               href="/profile"
               className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
             >
-              ข้อมูลส่วนบุคคล
+              {t("home.personaData")}
             </a>
           </li>
           <li>
@@ -60,7 +63,7 @@ function Profile() {
               onClick={() => dispatch(logout())}
               className="block w-full text-left py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
             >
-              ออกจากระบบ
+              {t("home.logout")}
             </button>
           </li>
         </ul>

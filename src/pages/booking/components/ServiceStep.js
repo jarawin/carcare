@@ -199,7 +199,7 @@ function ServiceStep() {
 
       {/*NOTE Enter promotion */}
       <div>
-        <label
+        <label  
           for="input-promotion"
           className="block mb-2 text-sm font-medium text-gray-900 red relative"
         >

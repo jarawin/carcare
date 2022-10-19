@@ -12,6 +12,7 @@ import customers from '../../apis/customers';
 
 import { AiFillLock, AiFillUnlock } from 'react-icons/ai';
 import verifyLogin from '../../verifydata/verifyLogin';
+import { useTranslation } from 'react-i18next';
 
 function Login() {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ function Login() {
   const customerInfo = useSelector(getCustomerInfo);
   const [error, setError] = useState({ isError: false, message: '' });
   const [pass, setPass] = useState(false);
+  const {t} = useTranslation();
 
   const handleUpdateProfile = (label, value) => {
     var temp = {
@@ -82,12 +84,12 @@ function Login() {
       setError({ isError: true, message: verify_res });
     }
     const query = new URLSearchParams(window.location.search);
-    if (!isLogin) {
-      window.location.href = query.get('callback') ?? '/';
-    }
-    if (isCustomer) {
-      window.location.href = query.get('callback') ?? '/';
-    }
+    // if (!isLogin) {
+    //   window.location.href = query.get('callback') ?? '/';
+    // }
+    // if (isCustomer) {
+    //   window.location.href = query.get('callback') ?? '/';
+    // }
   }, [isLogin, isCustomer, pass, dataUser]);
 
   return (
@@ -96,10 +98,10 @@ function Login() {
         <div className="max-w-md w-full space-y-8 bg-gray-100 dark:bg-gray-300  p-10 rounded-2xl">
           <div>
             <h2 className="text-center text-2xl lg:text-3xl font-extrabold text-gray-900">
-              ลงชื่อเข้าใช้งานครั้งแรก
+              {t("home.loginFirsttime")}
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
-              ยินดีต้อนรับเข้าสู่{' '}
+              {t("home.welcomeTo")}{' '}
               <a
                 href="#"
                 className="font-medium text-red-600 hover:text-red-500"
@@ -117,7 +119,7 @@ function Login() {
                     for="first_name"
                     class="block mb-2 text-sm font-medium text-gray-900 "
                   >
-                    ชื่อจริง
+                    {t("home.nameEdit")}
                   </label>
                   <input
                     type="text"
@@ -127,7 +129,7 @@ function Login() {
                       handleUpdateProfile('first_name', e.target.value);
                     }}
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
-                    placeholder="สมชาย"
+                    placeholder= {t("home.namePlaceholder_for_booking")}
                     required
                   />
                 </div>
@@ -136,7 +138,7 @@ function Login() {
                     for="last_name"
                     class="block mb-2 text-sm font-medium text-gray-900"
                   >
-                    นามสกุล
+                    {t("home.surnameEdit")}
                   </label>
                   <input
                     type="text"
@@ -146,7 +148,7 @@ function Login() {
                       handleUpdateProfile('last_name', e.target.value);
                     }}
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
-                    placeholder="ทองบุญ"
+                    placeholder=  {t("home.surnamePlaceholder_for_booking")}
                     required
                   />
                 </div>
@@ -157,7 +159,7 @@ function Login() {
                   for="email"
                   class="block mb-2 text-sm font-medium text-gray-900 "
                 >
-                  อีเมล
+                  {t("home.emailEdit")}
                 </label>
                 <input
                   type="email"
@@ -177,7 +179,7 @@ function Login() {
                   for="phone"
                   class="block mb-2 text-sm font-medium text-gray-900 "
                 >
-                  เบอร์โทรศัพท์
+                  {t("home.telEdit")}
                 </label>
                 <input
                   type="tel"
@@ -238,7 +240,7 @@ function Login() {
                     />
                   )}
                 </span>
-                ลงชื่อเข้าใช้งาน
+                ลงชื่อเข้าใช้งาน {t("home.updateEdit")}
               </button>
             </div>
           </form>

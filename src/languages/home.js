@@ -86,6 +86,10 @@ const data = {
     en: 'Garry',
     th: 'สมชาย'
   },
+  surnamePlaceholder_for_booking: {
+    en: 'Smith',
+    th: 'ชายสมร'
+  },
   type_car: {
     en: 'Type of car',
     th: 'ชนิดของรถ'
@@ -220,10 +224,66 @@ const data = {
   bookingOnline: {
     en: 'Online Booking',
     th: 'จองคิวออนไลน์'
+  },
+
+  profileEdit: {
+    en: 'Edit Personal Info',
+    th: 'แก้ไขข้อมูลส่วนตัว'
+  },
+  nameEdit: {
+    en: 'Name',
+    th: 'ชื่อจริง'
+  },
+  surnameEdit: {
+    en: 'Surname',
+    th: 'นามสกุล'
+  },
+  emailEdit: {
+    en: 'Email',
+    th: 'อีเมล'
+  },
+  telEdit: {
+    en: 'Phone number',
+    th: 'เบอร์โทรศัพท์'
+  },
+  updateEdit: {
+    en: 'Data Update',
+    th: 'อัพเดตข้อมูล'
+  },
+
+  bookingQueue: {
+    en: 'Booking queue',
+    th: 'จองคิว'
+  },
+  arrive: {
+    en: 'Arrive',
+    th: 'มาถึง'
+  },
+  discount: {
+    en: 'Discount',
+    th: 'ส่วนลด'
+  },
+  commission: {
+    en: 'Commission',
+    th: 'คอมมิชชั่น'
+  },
+
+  logout: {
+    en: 'Logout',
+    th: 'ออกจากระบบ'
+  },
+  personaData: {
+    en: 'Personal Data',
+    th: 'ข้อมูลส่วนบุคคล'
   }
-
-  
-
+  ,loginFirsttime: {
+    en: 'Register for the first time login',
+    th: 'ลงชื่อเข้าใช้งานครั้งแรก'
+  },
+  welcomeTo: {
+    en: 'Welcome to',
+    th: 'ยินดีต้อนรับเข้าสู่'
+  },
 };
 export const HomeEn = parserObj(data, 'en');
 export const HomeTh = parserObj(data, 'th');

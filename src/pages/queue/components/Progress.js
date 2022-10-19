@@ -26,6 +26,7 @@ import CorrectOutline from './svg/CorrectOutline';
 import statusList from '../../../data/statusList';
 import carTypes from '../../../data/carTypeCss';
 import carColors from '../../../data/carColorCss';
+import { useTranslation } from 'react-i18next';
 
 const handleStatus = (status) => {
   const status_index = statusList.findIndex((item) => item.name === status);
@@ -70,6 +71,7 @@ const handleCarBgColor = (color) => {
 function Progress() {
   const dispatch = useDispatch();
   const orders = useSelector(selectOrder);
+  const {t} = useTranslation();
 
   const choiceSetting = [
     {
@@ -137,7 +139,7 @@ function Progress() {
                     {item.license_car}
                   </span>
                   <span className="text-sm text-gray-500 dark:text-white ml-2">
-                    {item.type_car}
+                    {t("home."+item.type_car)}
                   </span>
                 </div>
               </div>
@@ -261,7 +263,7 @@ function Progress() {
                     }
                     className="px-2 py-1 flex items-center cursor-pointer font-semibold text-xs rounded-md text-pink-400 border border-pink-400  bg-white"
                   >
-                    จองคิว
+                    {t("home.bookingQueue")}
                   </span>
                 )
               ) : null}
@@ -282,7 +284,7 @@ function Progress() {
                     }
                     className="px-2 py-1 flex items-center cursor-pointer font-semibold text-xs rounded-md text-orange-400 border border-orange-400  bg-white"
                   >
-                    มาถึง
+                    {t("home.arrive")}
                   </span>
                 )
               ) : null}
@@ -303,7 +305,7 @@ function Progress() {
                     }
                     className="px-2 py-1 flex items-center cursor-pointer font-semibold text-xs rounded-md text-lime-400 border border-lime-400  bg-white"
                   >
-                    ส่วนลด
+                    {t("home.discount")}
                   </span>
                 )
               ) : null}
@@ -325,7 +327,7 @@ function Progress() {
                     }
                     className="px-2 py-1 flex items-center cursor-pointer font-semibold text-xs rounded-md text-cyan-400 border border-cyan-400  bg-white"
                   >
-                    คอมมิชชั่น
+                    {t("home.promotion_Step")}
                   </span>
                 )
               ) : null}
@@ -351,7 +353,7 @@ function Progress() {
                   dispatch(prevStatus({ oIdx, status: item.order_status }))
                 }
               >
-                <IoIosArrowBack /> Prev
+                <IoIosArrowBack /> {t("home.back_button")} 
               </span>
               <span
                 className={
@@ -367,7 +369,7 @@ function Progress() {
                   dispatch(nextStatus({ oIdx, status: item.order_status }))
                 }
               >
-                Next <IoIosArrowForward />
+                {t("home.next_button")} <IoIosArrowForward />
               </span>
             </div>
           </div>
