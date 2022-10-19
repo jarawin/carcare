@@ -11,6 +11,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { HiPhone, HiUser } from 'react-icons/hi';
 import { AiFillCar } from 'react-icons/ai';
+import { useTranslation } from 'react-i18next';
 
 // import dateAvailable from '../../../data/mock/dateAvailable';
 import timeAvailable from '../../../data/mock/timeAvailable';
@@ -37,6 +38,7 @@ const getDateAvailable = (amount, startDate = new Date()) => {
 };
 
 function UserStep() {
+  const {t} = useTranslation();
   const dispatch = useDispatch();
   const db = useSelector(selectDataBooking);
 
@@ -52,7 +54,9 @@ function UserStep() {
         for="input-name"
         className="block mb-2 text-sm font-medium text-gray-900  "
       >
-        ชื่อของผู้จอง
+
+      {t("home.name_for_booking")}
+
       </label>
       <div className="relative mb-6 ">
         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -64,7 +68,7 @@ function UserStep() {
           value={db.nickname}
           onChange={(e) => dispatch(setNickname(e.target.value))}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500 required w-full"
-          placeholder="สมชาย"
+          placeholder= {t("home.namePlaceholder_for_booking")}
         />
       </div>
 
@@ -73,7 +77,7 @@ function UserStep() {
         for="input-phone"
         className="block mb-2 text-sm font-medium text-gray-900 red"
       >
-        เบอร์โทรศัพท์
+        {t("home.phoneNumber_for_booking")}
       </label>
       <div className="relative mb-6">
         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -93,7 +97,7 @@ function UserStep() {
         for="input-License plate"
         className="block mb-2 text-sm font-medium text-gray-900 red"
       >
-        วันที่จองคิว
+        {t("home.bookingDate_for_booking")}
       </label>
       {/* NOTE Date */}
       <div className="relative mb-6">
@@ -119,7 +123,7 @@ function UserStep() {
         for="input-License plate"
         className="block mb-2 text-sm font-medium text-gray-900 red"
       >
-        เวลาที่จองคิว
+        {t("home.bookingTime_for_booking")}
       </label>
       {/* NOTE Date */}
       <div className="relative mb-6">
@@ -134,7 +138,7 @@ function UserStep() {
         >
           {timeAvailable.map((time) => (
             <option value={time} selected>
-              {time + ' น.'}
+              {time + t("home.Time_for_booking")}
             </option>
           ))}
         </select>

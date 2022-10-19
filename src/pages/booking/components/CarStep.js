@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   setTypeCar,
   setLicenseCar,
@@ -15,6 +16,7 @@ import carTypes from '../../../data/carTypes';
 function CarStep() {
   const dispatch = useDispatch();
   const db = useSelector(selectDataBooking);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -36,7 +38,7 @@ function CarStep() {
           value={db.type_car}
         >
           {carTypes.map((i) => (
-            <option value={i.type_of_car}>{i.name}</option>
+            <option value={i.type_of_car}>{t("home."+i.type_of_car)}</option>
           ))}
         </select>
       </div>
@@ -70,7 +72,7 @@ function CarStep() {
         for="input-License plate"
         className="block mb-2 text-sm font-medium text-gray-900 red"
       >
-        ป้ายทะเบียนรถ
+        {t("home.carLicense")}
       </label>
       <div className="relative mb-6">
         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
