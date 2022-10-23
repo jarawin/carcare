@@ -22,7 +22,7 @@ function Booking() {
   const dispatch = useDispatch();
   const db = useSelector(selectDataBooking);
   const forBooking = useSelector(getForBooking);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   const [step, setStep] = React.useState(
     parseInt(localStorage.getItem('step') || '1')
@@ -33,6 +33,13 @@ function Booking() {
     message: '',
   });
 
+  const handleSubmmitBooking = (e) => {
+    e.preventDefault();
+
+    alert('Booking success');
+    window.location.href = '/queue';
+  };
+
   React.useEffect(() => {
     if (db.nickname == '' && forBooking.first_name) {
       dispatch(setNickname(forBooking.first_name));
@@ -41,7 +48,7 @@ function Booking() {
     if (db.tel == '' && forBooking.tel) {
       dispatch(setTel(forBooking.tel));
     }
-  }, []);
+  }, [forBooking]);
 
   React.useEffect(() => {
     const veri = verifyBooking(db, step);
@@ -72,7 +79,7 @@ function Booking() {
       <div className="col-span-2 mb-10  max-w-md w-full space-y-8 bg-gray-100 dark:bg-gray-300  p-10 rounded-2xl mt-10 mx-auto">
         <div>
           <h2 className="text-center text-2xl lg:text-3xl font-extrabold text-gray-900">
-            {t("home.bookingOnline")}
+            {t('home.bookingOnline')}
             <br />
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
@@ -167,14 +174,14 @@ function Booking() {
                 ' group mt-6 relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 '
               }
             >
-              {t("home.back_button")}
+              {t('home.back_button')}
             </button>
             <button
               type="submit"
               disabled={step >= 4 || error.isError}
               onClick={() => {
                 if (step === 3) {
-                  alert('ยืนยันการจอง');
+                  handleSubmmitBooking();
                 } else {
                   setStep(step + 1);
                   localStorage.setItem('step', step + 1);
@@ -187,7 +194,7 @@ function Booking() {
                 ' group mt-6 relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 '
               }
             >
-              {step < 3 ? t("home.next_button") : t("home.confirm_button")}
+              {step < 3 ? t('home.next_button') : t('home.confirm_button')}
             </button>
           </div>
         </div>

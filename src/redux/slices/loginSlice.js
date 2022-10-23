@@ -9,7 +9,6 @@ const initialState = {
   last_name: localStorage.getItem('last_name') || '',
   image_url: localStorage.getItem('image_url') || '',
   social_id: localStorage.getItem('social_id') || '',
-  login_state: localStorage.getItem('login_state') || '',
   email: localStorage.getItem('email') || '',
   tel: localStorage.getItem('tel') || '',
   firstlogin_time: localStorage.getItem('firstlogin_time') || '',
@@ -34,7 +33,6 @@ export const loginSlice = createSlice({
       localStorage.setItem('last_name', '');
       localStorage.setItem('image_url', '');
       localStorage.setItem('social_id', '');
-      localStorage.setItem('login_state', '');
       localStorage.setItem('email', '');
 
       state.is_login = false;
@@ -70,7 +68,6 @@ export const loginSlice = createSlice({
       localStorage.setItem('last_name', action.payload.family_name);
       localStorage.setItem('image_url', action.payload.picture);
       localStorage.setItem('social_id', action.payload.sub);
-      localStorage.setItem('login_state', action.payload.state);
       localStorage.setItem('email', action.payload.email);
 
       state.first_name = action.payload.given_name;
@@ -99,7 +96,6 @@ export const loginSlice = createSlice({
       localStorage.setItem('last_name', action.payload.lname);
       localStorage.setItem('image_url', action.payload.picture_url);
       localStorage.setItem('social_id', action.payload.customer_id);
-      localStorage.setItem('login_state', action.payload.login_state);
       localStorage.setItem('email', action.payload.email);
       localStorage.setItem('tel', action.payload.tel);
       localStorage.setItem('firstlogin_time', action.payload.firstlogin_time);
@@ -111,7 +107,6 @@ export const loginSlice = createSlice({
       state.last_name = action.payload.lname;
       state.image_url = action.payload.picture_url;
       state.social_id = action.payload.customer_id;
-      state.login_state = action.payload.login_state;
       state.email = action.payload.email;
       state.tel = action.payload.tel;
       state.firstlogin_time = action.payload.firstlogin_time;

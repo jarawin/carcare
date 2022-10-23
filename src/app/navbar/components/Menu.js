@@ -14,12 +14,12 @@ function Menu(props) {
       url: '/',
     },
     {
-      name: 'Services',
-      url: '/services',
-    },
-    {
       name: 'Booking',
       url: '/booking',
+    },
+    {
+      name: 'Queue',
+      url: '/queue',
     },
   ];
 

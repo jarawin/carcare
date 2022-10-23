@@ -15,19 +15,7 @@ function getTimeStamp(t) {
   return d.getTime() / 1000;
 }
 
-const getDateAvailable = (amount, startDate = new Date()) => {
-  const dateAvailable = [];
-  for (let i = 0; i < amount; i++) {
-    dateAvailable.push({
-      name: startDate.toLocaleDateString('th-TH', { weekday: 'long' }),
-      date: startDate.toLocaleDateString('th-TH'),
-    });
-    startDate.setDate(startDate.getDate() + 1);
-  }
-  return dateAvailable;
-};
-
-const dateAvailable = getDateAvailable(1);
+const dateAvailable = new Date().toLocaleDateString('th-TH');
 
 const initialState = {
   type_car: localStorage.getItem('booking.type_car') || carTypes[0].type_of_car,
@@ -40,12 +28,12 @@ const initialState = {
   comment: localStorage.getItem('booking.comment') || '',
   booking_time:
     localStorage.getItem('booking.booking_time') ||
-    getTimeStamp(dateAvailable.date + ' ' + timeAvailable[0]),
+    getTimeStamp(dateAvailable + ' ' + timeAvailable[0]),
   included: JSON.parse(localStorage.getItem('booking.included')) || [
-    { services_id: services[0].service_id },
+    { service_id: services[0].service_id },
   ],
   promotion: localStorage.getItem('booking.promotion') || '',
-  date: localStorage.getItem('booking.date') || dateAvailable.date,
+  date: localStorage.getItem('booking.date') ?? dateAvailable,
   time: localStorage.getItem('booking.time') || timeAvailable[0],
 };
 
@@ -92,7 +80,7 @@ export const bookingSlice = createSlice({
     },
     setCode: (state, action) => {
       localStorage.setItem('booking.code', action.payload);
-      state.code = action.payload;
+      state.code = action?.payload?.toUpperCase();
     },
     setComment: (state, action) => {
       localStorage.setItem('booking.comment', action.payload);

@@ -6,7 +6,7 @@ class Promotions extends Base {
   }
 
   getPromotions() {
-    return this.axios.get('/promotions');
+    return this.axios.get('/promotion');
   }
 
   getPromotion(promotionId) {
@@ -14,6 +14,13 @@ class Promotions extends Base {
   }
 
   getCanUsePromotions(customerId, code, type_car, services) {
+    console.log(
+      'getCanUsePromotions',
+      customerId,
+      code,
+      type_car,
+      JSON.stringify(services)
+    );
     return this.axios.post(
       `/promotion/canuse?customer_id=${customerId}&code=${code}&type_car=${type_car}`,
       services

@@ -7,282 +7,288 @@ const data = {
   },
   description_1: {
     en: 'Open 9:00 - 19:00 daily.',
-    th: 'ให้บริการ 9:00 - 19:00 น.'
+    th: 'ให้บริการ 9:00 - 19:00 น.',
   },
   description_2: {
     en: 'At the underground parking lot, Lotus Songkhla',
-    th: 'ทุกวัน ณ ลานจอดรถชั้นใต้ดิน โลตัสสงขลา'
+    th: 'ทุกวัน ณ ลานจอดรถชั้นใต้ดิน โลตัสสงขลา',
   },
   booking_button: {
     en: 'Booking now',
-    th: 'จองคิวด่วน'
+    th: 'จองคิวด่วน',
   },
   our_service: {
     en: 'Our service',
-    th: 'บริการของเรา'
+    th: 'บริการของเรา',
   },
   have_service: {
     en: 'What services do we have?',
-    th: 'เรามีบริการอะไรบ้าง'
+    th: 'เรามีบริการอะไรบ้าง',
   },
   promote: {
     en: 'Good value, fast and every service is impressive.',
-    th: 'คุ้มค่าคุ้มราคา รวดเร็ว และทุกบริการประทับใจ'
+    th: 'คุ้มค่าคุ้มราคา รวดเร็ว และทุกบริการประทับใจ',
   },
   feature_1: {
     en: 'Car wash and vacuum.',
-    th: 'ล้างสีดูดฝุ่น'
+    th: 'ล้างสีดูดฝุ่น',
   },
   feature_descript_1: {
     en: 'Car wash and vacuum for car and motorcycle.',
-    th: 'ล้างสีดูดฝุ่นรถยนต์ รถจักรยานยนต์'
+    th: 'ล้างสีดูดฝุ่นรถยนต์ รถจักรยานยนต์',
   },
   feature_2: {
     en: 'Glass coating',
-    th: 'เคลือบแก้ว'
+    th: 'เคลือบแก้ว',
   },
   feature_descript_2: {
     en: 'Glass coating for car and motorcycle.',
-    th: 'เคลือบแก้วรถยนต์ รถจักรยานยนต์'
+    th: 'เคลือบแก้วรถยนต์ รถจักรยานยนต์',
   },
   feature_3: {
     en: 'Seat cleaning',
-    th: 'ฟอกเบาะ'
+    th: 'ฟอกเบาะ',
   },
   feature_descript_3: {
     en: 'Seat cleaning for car and motorcycle.',
-    th: 'ฟอกเบาะรถยนต์ รถจักรยานยนต์'
+    th: 'ฟอกเบาะรถยนต์ รถจักรยานยนต์',
   },
   feature_4: {
     en: 'Polish',
-    th: 'ขัดสี'
+    th: 'ขัดสี',
   },
   feature_descript_4: {
     en: 'Polish and Color coating for car and motorcycle.',
-    th: 'ขัดสีเคลือบสีรถยนต์ รถจักรยานยนต์'
+    th: 'ขัดสีเคลือบสีรถยนต์ รถจักรยานยนต์',
   },
-
+  loading: {
+    en: 'Loading...',
+    th: 'กำลังโหลด...',
+  },
   name_for_booking: {
     en: 'Name',
-    th: 'ชื่อของผู้จอง'
+    th: 'ชื่อของผู้จอง',
   },
   phoneNumber_for_booking: {
     en: 'Phone number',
-    th: 'ชื่อของผู้จอง'
+    th: 'ชื่อของผู้จอง',
   },
   bookingDate_for_booking: {
     en: 'Date to get service',
-    th: 'วันที่จองคิว'
+    th: 'วันที่จองคิว',
   },
   bookingTime_for_booking: {
     en: 'Time to get service',
-    th: 'เวลาที่จองคิว'
+    th: 'เวลาที่จองคิว',
   },
   Time_for_booking: {
     en: '',
-    th: 'น.'
+    th: 'น.',
   },
   namePlaceholder_for_booking: {
     en: 'Garry',
-    th: 'สมชาย'
+    th: 'สมชาย',
   },
   surnamePlaceholder_for_booking: {
     en: 'Smith',
-    th: 'ชายสมร'
+    th: 'ชายสมร',
   },
   type_car: {
     en: 'Type of car',
-    th: 'ชนิดของรถ'
+    th: 'ชนิดของรถ',
   },
   car_color: {
     en: 'Car color',
-    th: 'สีของรถ'
+    th: 'สีของรถ',
   },
-    SEDAN: {
-      en: 'Sedan',
-      th: 'รถเก๋ง'
-    },
-    PICKUP: {
-      en: 'Pickup',
-      th: 'รถกระบะ'
-    },
-    SUV: {
-      en: 'SUV',
-      th: 'รถSUV'
-    },
-    MC: {
-      en: 'Motorcycle',
-      th: 'รถมอเตอร์ไซค์'
-    },
-    VAN: {
-      en: 'VAN',
-      th: 'รถตู้'
-    }
-    ,
+  SEDAN: {
+    en: 'Sedan',
+    th: 'รถเก๋ง',
+  },
+  PICKUP: {
+    en: 'Pickup',
+    th: 'รถกระบะ',
+  },
+  SUV: {
+    en: 'SUV',
+    th: 'รถSUV',
+  },
+  MC: {
+    en: 'Motorcycle',
+    th: 'รถมอเตอร์ไซค์',
+  },
+  VAN: {
+    en: 'VAN',
+    th: 'รถตู้',
+  },
   carLicense: {
     en: 'License plate',
-    th: 'ป้ายทะเบียนรถ'
+    th: 'ป้ายทะเบียนรถ',
   },
 
   WHITE: {
     en: 'White',
-    th: 'ขาว'
+    th: 'ขาว',
   },
   BLACK: {
     en: 'Black',
-    th: 'ดำ'
+    th: 'ดำ',
   },
   GRAY: {
     en: 'Gray',
-    th: 'เทา'
+    th: 'เทา',
   },
   SILVER: {
     en: 'Silver',
-    th: 'เงิน'
+    th: 'เงิน',
   },
   RED: {
     en: 'Red',
-    th: 'เเดง'
+    th: 'เเดง',
   },
   BLUE: {
     en: 'Blue',
-    th: 'น้ำเงิน'
+    th: 'น้ำเงิน',
   },
   BROWN: {
     en: 'Brown',
-    th: 'น้ำตาล'
+    th: 'น้ำตาล',
   },
   GREEN: {
     en: 'Green',
-    th: 'เขียว'
+    th: 'เขียว',
   },
   BEIGE: {
     en: 'Beige',
-    th: 'เบจ'
+    th: 'เบจ',
   },
   ORANGE: {
     en: 'Orange',
-    th: 'ส้ม'
+    th: 'ส้ม',
   },
   GOLD: {
     en: 'Gold',
-    th: 'ทอง'
+    th: 'ทอง',
   },
   YELLOW: {
     en: 'Yellow',
-    th: 'เหลือง'
+    th: 'เหลือง',
   },
   PURPLE: {
     en: 'Purple',
-    th: 'ม่วง'
+    th: 'ม่วง',
   },
   OTHERS: {
     en: 'Other',
-    th: 'อื่นๆ'
+    th: 'อื่นๆ',
   },
   licensePlaceholder: {
     en: 'AB 1234 ',
-    th: 'กข 1234 กรุงเทพ'
+    th: 'กข 1234 กรุงเทพ',
   },
 
   service_Step: {
     en: 'Service',
-    th: 'บริการ'
+    th: 'บริการ',
   },
   promotion_Step: {
     en: 'Promotion',
-    th: 'โปรโมชั่น'
+    th: 'โปรโมชั่น',
+  },
+  cancel: {
+    en: 'cancel',
+    th: 'ยกเลิก',
   },
   verify_promo_Step: {
     en: 'Verify',
-    th: 'ตรวจสอบ'
+    th: 'ตรวจสอบ',
   },
   text_Step: {
     en: 'Message',
-    th: 'ข้อความเพิ่มเติม'
+    th: 'ข้อความเพิ่มเติม',
   },
   text_placeholder: {
     en: 'Message',
-    th: 'ข้อความเพิ่มเติม'
+    th: 'ข้อความเพิ่มเติม',
   },
   get_more_service: {
     en: '+ More service',
-    th: '+ เพิ่มบริการ'
+    th: '+ เพิ่มบริการ',
   },
   back_button: {
     en: 'Back',
-    th: 'ย้อนกลับ'
+    th: 'ย้อนกลับ',
   },
   confirm_button: {
     en: 'Confirm',
-    th: 'ยืนยันการจอง'
+    th: 'ยืนยันการจอง',
   },
   next_button: {
     en: 'Next',
-    th: 'ต่อไป'
+    th: 'ต่อไป',
   },
   bookingOnline: {
     en: 'Online Booking',
-    th: 'จองคิวออนไลน์'
+    th: 'จองคิวออนไลน์',
   },
 
   profileEdit: {
     en: 'Edit Personal Info',
-    th: 'แก้ไขข้อมูลส่วนตัว'
+    th: 'แก้ไขข้อมูลส่วนตัว',
   },
   nameEdit: {
     en: 'Name',
-    th: 'ชื่อจริง'
+    th: 'ชื่อจริง',
   },
   surnameEdit: {
     en: 'Surname',
-    th: 'นามสกุล'
+    th: 'นามสกุล',
   },
   emailEdit: {
     en: 'Email',
-    th: 'อีเมล'
+    th: 'อีเมล',
   },
   telEdit: {
     en: 'Phone number',
-    th: 'เบอร์โทรศัพท์'
+    th: 'เบอร์โทรศัพท์',
   },
   updateEdit: {
     en: 'Data Update',
-    th: 'อัพเดตข้อมูล'
+    th: 'อัพเดตข้อมูล',
   },
 
   bookingQueue: {
     en: 'Booking queue',
-    th: 'จองคิว'
+    th: 'จองคิว',
   },
   arrive: {
     en: 'Arrive',
-    th: 'มาถึง'
+    th: 'มาถึง',
   },
   discount: {
     en: 'Discount',
-    th: 'ส่วนลด'
+    th: 'ส่วนลด',
   },
   commission: {
     en: 'Commission',
-    th: 'คอมมิชชั่น'
+    th: 'คอมมิชชั่น',
   },
 
   logout: {
     en: 'Logout',
-    th: 'ออกจากระบบ'
+    th: 'ออกจากระบบ',
   },
   personaData: {
     en: 'Personal Data',
-    th: 'ข้อมูลส่วนบุคคล'
-  }
-  ,loginFirsttime: {
+    th: 'ข้อมูลส่วนบุคคล',
+  },
+  loginFirsttime: {
     en: 'Register for the first time login',
-    th: 'ลงชื่อเข้าใช้งานครั้งแรก'
+    th: 'ลงชื่อเข้าใช้งานครั้งแรก',
   },
   welcomeTo: {
     en: 'Welcome to',
-    th: 'ยินดีต้อนรับเข้าสู่'
+    th: 'ยินดีต้อนรับเข้าสู่',
   },
 };
 export const HomeEn = parserObj(data, 'en');

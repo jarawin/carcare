@@ -11,8 +11,8 @@ import {
   setIsCustomer,
   setFullData,
 } from '../../redux/slices/loginSlice';
-import customers from '../../apis/customers';
-import { addOrder } from '../../redux/slices/orderSlice';
+import customersAPI from '../../apis/customers';
+import { addOrder, selectOrder } from '../../redux/slices/orderSlice';
 import mockOrders from '../../data/mock/orders';
 
 // component
@@ -35,12 +35,13 @@ function Navbar() {
 
   const dispatch = useDispatch();
   const isLogin = useSelector(getIsLogin);
+  const order = useSelector(selectOrder);
 
   const [lang, setLang] = useMultiLang();
 
   const handleCheckIsCustomer = async (customer_id) => {
     try {
-      const res = await customers.getCustomer(customer_id);
+      const res = await customersAPI.getCustomer(customer_id);
       dispatch(setIsCustomer(res?.data?.isCustomer));
       console.log('res.data');
       console.log(res.data.data);
@@ -63,6 +64,11 @@ function Navbar() {
 
     handleCheckIsCustomer(response?.sub);
     dispatch(handleLogin(response));
+  };
+
+  const handleAddMockOrder = () => {
+    const len = order.length;
+    dispatch(addOrder([...order, mockOrders[len]]));
   };
 
   useEffect(() => {
@@ -97,9 +103,8 @@ function Navbar() {
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           {/* NOTE LOGO */}
           <a
-            href="#"
-            className="flex items-center"
-            onClick={(e) => dispatch(addOrder(mockOrders))}
+            className="flex items-center cursor-pointer"
+            onClick={handleAddMockOrder}
           >
             <span className="mr-1 ml-1 font-bold text-2xl self-center text-red-700 whitespace-nowrap dark:text-white">
               <img src={'/logo/7.svg'} className="h-12 lg:h-14 mr-1"></img>

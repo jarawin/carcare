@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default class Base {
-  constructor() {
+  constructor(props) {
     this.axios = axios.create({
       baseURL: 'http://localhost:3307',
       headers: {

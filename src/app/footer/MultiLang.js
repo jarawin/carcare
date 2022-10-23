@@ -70,14 +70,14 @@ function MultiLang(props) {
           ' relative z-40 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700'
         )}
       >
-        <ul className="absolute bg-gray-200 divide-y divide-gray-100 shadow dark:bg-gray-700 right-0 bottom-5 rounded-lg">
+        <ul className="absolute bg-gray-200  shadow dark:bg-gray-700 right-0 bottom-5 rounded-lg">
           {languages.map((language, index) => (
             <li key={index}>
               <a
                 className="block py-2 pr-10 pl-4 text-sm text-gray-700 hover:rounded-lg hover:bg-gray-100 dark:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"
                 onClick={() => handleChangeLang(language.lang)}
               >
-                <div className="inline-flex items-center">
+                <div className="inline-flex items-center dark:text-white">
                   <Flag country={language.flag} className="mr-2" />
                   {flu(language.name)}
                 </div>
